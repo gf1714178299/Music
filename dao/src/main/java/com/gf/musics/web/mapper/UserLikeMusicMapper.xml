@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gf.musics.web.dao.UserLikeMusicMapper">
+  <resultMap id="BaseResultMap" type="com.gf.musics.web.model.UserLikeMusic">
+    <id column="pk_id" jdbcType="INTEGER" property="pkId" />
+    <result column="user_id" jdbcType="INTEGER" property="userId" />
+    <result column="music_id" jdbcType="INTEGER" property="musicId" />
+    <result column="delete_flag" jdbcType="INTEGER" property="deleteFlag" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    pk_id, user_id, music_id, delete_flag, create_time
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from t_user_like_music
+    where pk_id = #{pkId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from t_user_like_music
+    where pk_id = #{pkId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.gf.musics.web.model.UserLikeMusic">
+    insert into t_user_like_music (pk_id, user_id, music_id, 
+      delete_flag, create_time)
+    values (#{pkId,jdbcType=INTEGER}, #{userId,jdbcType=INTEGER}, #{musicId,jdbcType=INTEGER}, 
+      #{deleteFlag,jdbcType=INTEGER}, #{createTime,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.gf.musics.web.model.UserLikeMusic">
+    insert into t_user_like_music
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="pkId != null">
+        pk_id,
+      </if>
+      <if test="userId != null">
+        user_id,
+      </if>
+      <if test="musicId != null">
+        music_id,
+      </if>
+      <if test="deleteFlag != null">
+        delete_flag,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="pkId != null">
+        #{pkId,jdbcType=INTEGER},
+      </if>
+      <if test="userId != null">
+        #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="musicId != null">
+        #{musicId,jdbcType=INTEGER},
+      </if>
+      <if test="deleteFlag != null">
+        #{deleteFlag,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.gf.musics.web.model.UserLikeMusic">
+    update t_user_like_music
+    <set>
+      <if test="userId != null">
+        user_id = #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="musicId != null">
+        music_id = #{musicId,jdbcType=INTEGER},
+      </if>
+      <if test="deleteFlag != null">
+        delete_flag = #{deleteFlag,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where pk_id = #{pkId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.gf.musics.web.model.UserLikeMusic">
+    update t_user_like_music
+    set user_id = #{userId,jdbcType=INTEGER},
+      music_id = #{musicId,jdbcType=INTEGER},
+      delete_flag = #{deleteFlag,jdbcType=INTEGER},
+      create_time = #{createTime,jdbcType=TIMESTAMP}
+    where pk_id = #{pkId,jdbcType=INTEGER}
+  </update>
+  <select id="selectByAccount" parameterType="java.util.HashMap" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+     from t_user_like_music
+    <trim prefix="WHERE" prefixOverrides="AND|OR">
+      delete_flag = 0
+      <if test="account != null and account != ''">
+        AND user_id = #{account}
+      </if>
+    </trim>
+    ORDER BY create_time DESC
+  </select>
+</mapper>

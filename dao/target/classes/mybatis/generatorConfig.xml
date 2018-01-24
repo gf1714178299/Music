@@ -1,0 +1,79 @@
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+    <classPathEntry
+            location="F:\demo\demo\Musics\Musics\dao\src\main\resources\mybatis\mysql-connector-java-5.1.26.jar"/>
+    <context id="my" targetRuntime="MyBatis3">
+        <commentGenerator>
+            <property name="suppressDate" value="false"/>
+            <property name="suppressAllComments" value="true"/>
+        </commentGenerator>
+
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://localhost:3306/music?characterEncoding=UTF-8"
+                        userId="root"
+                        password="root"/>
+
+        <javaModelGenerator targetPackage="com.gf.musics.web.model"
+                            targetProject="F:\demo\demo\Musics\Musics\dao\src\main\java">
+            <property name="enableSubPackages" value="true"/>
+            <property name="trimStrings" value="true"/>
+        </javaModelGenerator>
+
+        <sqlMapGenerator targetPackage="com.gf.musics.web.mapper"
+                         targetProject="F:\demo\demo\Musics\Musics\dao\src\main\java">
+            <property name="enableSubPackages" value="true"/>
+        </sqlMapGenerator>
+
+        <javaClientGenerator targetPackage="com.gf.musics.web.dao"
+                             targetProject="F:\demo\demo\Musics\Musics\dao\src\main\java" type="XMLMAPPER">
+            <property name="enableSubPackages" value="true"/>
+        </javaClientGenerator>
+
+        <!--<table tableName="t_album" domainObjectName="Album" enableCountByExample="false" enableUpdateByExample="false"-->
+               <!--enableDeleteByExample="false" enableSelectByExample="false"-->
+               <!--selectByExampleQueryId="false" />-->
+        <!--<table tableName="t_music_label" domainObjectName="MusicLabel" enableCountByExample="false" enableUpdateByExample="false"-->
+               <!--enableDeleteByExample="false" enableSelectByExample="false"-->
+               <!--selectByExampleQueryId="false" />-->
+        <!--<table tableName="t_music_style" domainObjectName="MusicStyle" enableCountByExample="false" enableUpdateByExample="false"-->
+               <!--enableDeleteByExample="false" enableSelectByExample="false"-->
+               <!--selectByExampleQueryId="false" />-->
+        <!--<table tableName="t_musiclibrary" domainObjectName="MusicLibrary" enableCountByExample="false" enableUpdateByExample="false"-->
+               <!--enableDeleteByExample="false" enableSelectByExample="false"-->
+               <!--selectByExampleQueryId="false" />-->
+        <!--<table tableName="t_singer" domainObjectName="Singer" enableCountByExample="false" enableUpdateByExample="false"-->
+               <!--enableDeleteByExample="false" enableSelectByExample="false"-->
+               <!--selectByExampleQueryId="false" />-->
+        <!--<table tableName="t_singer_country" domainObjectName="SingerCountry" enableCountByExample="false" enableUpdateByExample="false"-->
+               <!--enableDeleteByExample="false" enableSelectByExample="false"-->
+               <!--selectByExampleQueryId="false" />-->
+        <!--<table tableName="t_singer_style" domainObjectName="SingerStyle" enableCountByExample="false" enableUpdateByExample="false"-->
+               <!--enableDeleteByExample="false" enableSelectByExample="false"-->
+               <!--selectByExampleQueryId="false" />-->
+        <table tableName="t_user_songlist" domainObjectName="UserSongList" enableCountByExample="false" enableUpdateByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false"
+               selectByExampleQueryId="false" />
+        <!--<table tableName="t_songlist_music" domainObjectName="SongListMusic" enableCountByExample="false" enableUpdateByExample="false"-->
+               <!--enableDeleteByExample="false" enableSelectByExample="false"-->
+               <!--selectByExampleQueryId="false" />-->
+        <!--<table tableName="t_manager" domainObjectName="Manager" enableCountByExample="false" enableUpdateByExample="false"-->
+               <!--enableDeleteByExample="false" enableSelectByExample="false"-->
+               <!--selectByExampleQueryId="false" />-->
+        <!--<table tableName="t_role" domainObjectName="Role" enableCountByExample="false" enableUpdateByExample="false"-->
+               <!--enableDeleteByExample="false" enableSelectByExample="false"-->
+               <!--selectByExampleQueryId="false" />-->
+        <!--<table tableName="t_resource" domainObjectName="Resource" enableCountByExample="false" enableUpdateByExample="false"-->
+               <!--enableDeleteByExample="false" enableSelectByExample="false"-->
+               <!--selectByExampleQueryId="false" />-->
+        <!--<table tableName="t_permission_assignment" domainObjectName="PermissionAssignment" enableCountByExample="false" enableUpdateByExample="false"-->
+               <!--enableDeleteByExample="false" enableSelectByExample="false"-->
+               <!--selectByExampleQueryId="false" />-->
+        <!--<table tableName="t_version" domainObjectName="Version" enableCountByExample="false" enableUpdateByExample="false"-->
+               <!--enableDeleteByExample="false" enableSelectByExample="false"-->
+               <!--selectByExampleQueryId="false" />-->
+    </context>
+</generatorConfiguration>

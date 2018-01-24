@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.gf.musics.web.dao.SingerMapper" >
+  <resultMap id="BaseResultMap" type="com.gf.musics.web.model.Singer" >
+    <id column="pk_id" property="pkId" jdbcType="INTEGER" />
+    <result column="singer_name" property="singerName" jdbcType="VARCHAR" />
+    <result column="singer_img" property="singerImg" jdbcType="VARCHAR" />
+    <result column="singer_gender" property="singerGender" jdbcType="INTEGER" />
+    <result column="singer_styleId" property="singerStyleid" jdbcType="INTEGER" />
+    <result column="country_type" property="countryType" jdbcType="INTEGER" />
+  </resultMap>
+  <resultMap id="ResultMapWithBLOBs" type="com.gf.musics.web.model.Singer" extends="BaseResultMap" >
+    <result column="description" property="description" jdbcType="LONGVARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    pk_id, singer_name, singer_img, singer_gender, singer_styleId, country_type
+  </sql>
+  <sql id="Blob_Column_List" >
+    description
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="ResultMapWithBLOBs" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from t_singer
+    where pk_id = #{pkId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from t_singer
+    where pk_id = #{pkId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.gf.musics.web.model.Singer" >
+    insert into t_singer (pk_id, singer_name, singer_img, 
+      singer_gender, singer_styleId, country_type, 
+      description)
+    values (#{pkId,jdbcType=INTEGER}, #{singerName,jdbcType=VARCHAR}, #{singerImg,jdbcType=VARCHAR}, 
+      #{singerGender,jdbcType=INTEGER}, #{singerStyleid,jdbcType=INTEGER}, #{countryType,jdbcType=INTEGER}, 
+      #{description,jdbcType=LONGVARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.gf.musics.web.model.Singer" >
+    insert into t_singer
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="pkId != null" >
+        pk_id,
+      </if>
+      <if test="singerName != null" >
+        singer_name,
+      </if>
+      <if test="singerImg != null" >
+        singer_img,
+      </if>
+      <if test="singerGender != null" >
+        singer_gender,
+      </if>
+      <if test="singerStyleid != null" >
+        singer_styleId,
+      </if>
+      <if test="countryType != null" >
+        country_type,
+      </if>
+      <if test="description != null" >
+        description,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="pkId != null" >
+        #{pkId,jdbcType=INTEGER},
+      </if>
+      <if test="singerName != null" >
+        #{singerName,jdbcType=VARCHAR},
+      </if>
+      <if test="singerImg != null" >
+        #{singerImg,jdbcType=VARCHAR},
+      </if>
+      <if test="singerGender != null" >
+        #{singerGender,jdbcType=INTEGER},
+      </if>
+      <if test="singerStyleid != null" >
+        #{singerStyleid,jdbcType=INTEGER},
+      </if>
+      <if test="countryType != null" >
+        #{countryType,jdbcType=INTEGER},
+      </if>
+      <if test="description != null" >
+        #{description,jdbcType=LONGVARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.gf.musics.web.model.Singer" >
+    update t_singer
+    <set >
+      <if test="singerName != null" >
+        singer_name = #{singerName,jdbcType=VARCHAR},
+      </if>
+      <if test="singerImg != null" >
+        singer_img = #{singerImg,jdbcType=VARCHAR},
+      </if>
+      <if test="singerGender != null" >
+        singer_gender = #{singerGender,jdbcType=INTEGER},
+      </if>
+      <if test="singerStyleid != null" >
+        singer_styleId = #{singerStyleid,jdbcType=INTEGER},
+      </if>
+      <if test="countryType != null" >
+        country_type = #{countryType,jdbcType=INTEGER},
+      </if>
+      <if test="description != null" >
+        description = #{description,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    where pk_id = #{pkId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.gf.musics.web.model.Singer" >
+    update t_singer
+    set singer_name = #{singerName,jdbcType=VARCHAR},
+      singer_img = #{singerImg,jdbcType=VARCHAR},
+      singer_gender = #{singerGender,jdbcType=INTEGER},
+      singer_styleId = #{singerStyleid,jdbcType=INTEGER},
+      country_type = #{countryType,jdbcType=INTEGER},
+      description = #{description,jdbcType=LONGVARCHAR}
+    where pk_id = #{pkId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.gf.musics.web.model.Singer" >
+    update t_singer
+    set singer_name = #{singerName,jdbcType=VARCHAR},
+      singer_img = #{singerImg,jdbcType=VARCHAR},
+      singer_gender = #{singerGender,jdbcType=INTEGER},
+      singer_styleId = #{singerStyleid,jdbcType=INTEGER},
+      country_type = #{countryType,jdbcType=INTEGER}
+    where pk_id = #{pkId,jdbcType=INTEGER}
+  </update>
+  <select id="getBlurrySingerNameList" parameterType="java.util.HashMap" resultMap="BaseResultMap">
+    SELECT DISTINCT pk_id
+    <include refid="Base_Column_List" />
+    FROM t_singer
+    <trim prefix="WHERE" prefixOverrides="AND|OR">
+      <if test="singerName!=null and singerName!='' ">
+        AND singer_name LIKE concat(concat('%',#{keyWords}),'%')
+      </if>
+      <if test="singerGender!=null and singerGender!='' ">
+        AND singer_gender LIKE concat(concat('%',#{keyWords}),'%')
+      </if>
+    </trim>
+    ORDER BY update_time DESC
+    <if test="index != null and length != null">
+      LIMIT #{index},#{length}
+    </if>
+  </select>
+</mapper>

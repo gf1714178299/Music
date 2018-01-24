@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Maven: com.aliyun:aliyun-java-sdk-core:3.2.10">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/aliyun/aliyun-java-sdk-core/3.2.10/aliyun-java-sdk-core-3.2.10.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/aliyun/aliyun-java-sdk-core/3.2.10/aliyun-java-sdk-core-3.2.10-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/aliyun/aliyun-java-sdk-core/3.2.10/aliyun-java-sdk-core-3.2.10-sources.jar!/" />
+      <root url="jar://E:/dysms_java/java/msg_demo/alicom-mns-receive-samples/lib/alicom-mns-receive-sdk-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

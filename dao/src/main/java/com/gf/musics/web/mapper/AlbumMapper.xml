@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gf.musics.web.dao.AlbumMapper">
+  <resultMap id="BaseResultMap" type="com.gf.musics.web.model.Album">
+    <id column="pkId" jdbcType="INTEGER" property="pkid" />
+    <result column="album_name" jdbcType="VARCHAR" property="albumName" />
+    <result column="singer_id" jdbcType="VARCHAR" property="singerId" />
+    <result column="delete_flag" jdbcType="INTEGER" property="deleteFlag" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    pkId, album_name, singer_id, delete_flag, create_time, update_time
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from t_album
+    where pkId = #{pkid,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from t_album
+    where pkId = #{pkid,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.gf.musics.web.model.Album">
+    insert into t_album (pkId, album_name, singer_id, 
+      delete_flag, create_time, update_time
+      )
+    values (#{pkid,jdbcType=INTEGER}, #{albumName,jdbcType=VARCHAR}, #{singerId,jdbcType=VARCHAR}, 
+      #{deleteFlag,jdbcType=INTEGER}, #{createTime,jdbcType=TIMESTAMP}, #{updateTime,jdbcType=TIMESTAMP}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.gf.musics.web.model.Album">
+    insert into t_album
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="pkid != null">
+        pkId,
+      </if>
+      <if test="albumName != null">
+        album_name,
+      </if>
+      <if test="singerId != null">
+        singer_id,
+      </if>
+      <if test="deleteFlag != null">
+        delete_flag,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="updateTime != null">
+        update_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="pkid != null">
+        #{pkid,jdbcType=INTEGER},
+      </if>
+      <if test="albumName != null">
+        #{albumName,jdbcType=VARCHAR},
+      </if>
+      <if test="singerId != null">
+        #{singerId,jdbcType=VARCHAR},
+      </if>
+      <if test="deleteFlag != null">
+        #{deleteFlag,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null">
+        #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.gf.musics.web.model.Album">
+    update t_album
+    <set>
+      <if test="albumName != null">
+        album_name = #{albumName,jdbcType=VARCHAR},
+      </if>
+      <if test="singerId != null">
+        singer_id = #{singerId,jdbcType=VARCHAR},
+      </if>
+      <if test="deleteFlag != null">
+        delete_flag = #{deleteFlag,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null">
+        update_time = #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where pkId = #{pkid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.gf.musics.web.model.Album">
+    update t_album
+    set album_name = #{albumName,jdbcType=VARCHAR},
+      singer_id = #{singerId,jdbcType=VARCHAR},
+      delete_flag = #{deleteFlag,jdbcType=INTEGER},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      update_time = #{updateTime,jdbcType=TIMESTAMP}
+    where pkId = #{pkid,jdbcType=INTEGER}
+  </update>
+</mapper>

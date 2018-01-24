@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+  <context-param>
+    <param-name>webAppRootKey</param-name>
+    <param-value>admin.root</param-value>
+  </context-param>
+  <context-param>
+    <param-name>logbackConfigLocation</param-name>
+    <param-value>classpath:configs/logback.xml</param-value>
+  </context-param>
+
+  <!-- The definition of the Root Spring Container shared by all Servlets and Filters -->
+  <context-param>
+    <param-name>contextConfigLocation</param-name>
+    <param-value>classpath:spring/spring-*.xml</param-value>
+  </context-param>
+  <!-- 用spring Encoding,解决乱码问题 -->
+  <filter>
+    <filter-name>encodingFilter</filter-name>
+    <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+    <init-param>
+      <param-name>encoding</param-name>
+      <param-value>UTF-8</param-value>
+    </init-param>
+    <init-param>
+      <param-name>forceEncoding</param-name>
+      <param-value>true</param-value>
+    </init-param>
+  </filter>
+  <filter-mapping>
+    <filter-name>encodingFilter</filter-name>
+    <url-pattern>*</url-pattern>
+  </filter-mapping>
+  <!-- Creates the Spring Container shared by all Servlets and Filters -->
+
+  <listener>
+    <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+  </listener>
+  <listener>
+    <listener-class>ch.qos.logback.ext.spring.web.LogbackConfigListener</listener-class>
+  </listener>
+  <servlet>
+    <servlet-name>springMVC</servlet-name>
+    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+    <init-param>
+      <param-name>contextConfigLocation</param-name>
+      <param-value>classpath:spring/servlet-context.xml</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>springMVC</servlet-name>
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>DruidStatView</servlet-name>
+    <servlet-class>com.alibaba.druid.support.http.StatViewServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DruidStatView</servlet-name>
+    <url-pattern>/druid/*</url-pattern>
+  </servlet-mapping>
+  <!--   <filter>
+        <filter-name>LoginFilter</filter-name>
+        <filter-class>com.njbd.jay.filter.LoginFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>LoginFilter</filter-name>
+        <url-pattern>/admin/*</url-pattern>
+    </filter-mapping>-->
+  <!-- session超时定义,单位为分钟 -->
+  <session-config>
+    <session-timeout>4800</session-timeout>
+  </session-config>
+
+  <error-page>
+    <error-code>404</error-code>
+    <location>/WEB-INF/views/manage/404.html</location>
+  </error-page>
+
+
+
+  <!-- ==================== 单点登录开始 ================ -->
+  <!-- 用于单点退出，该监听器和过滤器用于实现单点登出功能，可选配置 -->
+  <!--<listener>-->
+  <!--<listener-class>org.jasig.cas.client.session.SingleSignOutHttpSessionListener</listener-class>-->
+  <!--</listener>-->
+  <!--<filter>-->
+  <!--<filter-name>CAS Single Sign Out Filter</filter-name>-->
+  <!--<filter-class>org.jasig.cas.client.session.SingleSignOutFilter</filter-class>-->
+  <!--</filter>-->
+  <!--<filter-mapping>-->
+  <!--<filter-name>CAS Single Sign Out Filter</filter-name>-->
+  <!--<url-pattern>/*</url-pattern>-->
+  <!--</filter-mapping>-->
+  <!--&lt;!&ndash; 该过滤器负责用户的认证工作，必须启用它 &ndash;&gt;-->
+  <!--<filter>-->
+  <!--<filter-name>CASFilter</filter-name>-->
+  <!--<filter-class>org.jasig.cas.client.authentication.AuthenticationFilter</filter-class>-->
+  <!--<init-param>-->
+  <!--<param-name>casServerLoginUrl</param-name>-->
+  <!--&lt;!&ndash;这里的server是CAS服务端的登录地址,login为固定值&ndash;&gt;-->
+  <!--<param-value>https://authserver.njau.edu.cn/authserver/login</param-value>-->
+  <!--</init-param>-->
+  <!--<init-param>-->
+  <!--<param-name>serverName</param-name>-->
+  <!--&lt;!&ndash;这里是应用地址，注意是域名:端口或者ip:端口https://nnyn.njau.edu.cn&ndash;&gt;-->
+  <!--<param-value>https://nnyn.njau.edu.cn</param-value>-->
+  <!--</init-param>-->
+  <!--</filter>-->
+  <!--<filter-mapping>-->
+  <!--<filter-name>CASFilter</filter-name>-->
+  <!--<url-pattern>/*</url-pattern>-->
+  <!--</filter-mapping>-->
+
+  <!--&lt;!&ndash; 该过滤器负责对Ticket的校验工作，必须启用它 &ndash;&gt;-->
+  <!--<filter>-->
+  <!--<filter-name>CAS Validation Filter</filter-name>-->
+  <!--<filter-class>org.jasig.cas.client.validation.Cas20ProxyReceivingTicketValidationFilter</filter-class>-->
+  <!--<init-param>-->
+  <!--<param-name>casServerUrlPrefix</param-name>-->
+  <!--&lt;!&ndash;这里的server是CAS服务端的地址,这里不要加login&ndash;&gt;-->
+  <!--<param-value>https://authserver.njau.edu.cn/authserver</param-value>-->
+  <!--</init-param>-->
+  <!--<init-param>-->
+  <!--<param-name>serverName</param-name>-->
+  <!--&lt;!&ndash;这里是应用地址，注意是域名:端口或者ip:端口&ndash;&gt;-->
+  <!--<param-value>https://nnyn.njau.edu.cn</param-value>-->
+  <!--</init-param>-->
+  <!--&lt;!&ndash;去身份认证的校验的时候也需要加一个编码&ndash;&gt;-->
+  <!--<init-param>-->
+  <!--<param-name>encoding</param-name>-->
+  <!--<param-value>UTF-8</param-value>-->
+  <!--</init-param>-->
+  <!--</filter>-->
+  <!--<filter-mapping>-->
+  <!--<filter-name>CAS Validation Filter</filter-name>-->
+  <!--<url-pattern>/*</url-pattern>-->
+  <!--</filter-mapping>-->
+
+  <!--&lt;!&ndash; 该过滤器负责实现HttpServletRequest请求的包裹，比如允许开发者通过HttpServletRequest的getRemoteUser()方法获得SSO登录用户的登录名。 &ndash;&gt;-->
+  <!--<filter>-->
+  <!--<filter-name>CAS HttpServletRequest Wrapper Filter</filter-name>-->
+  <!--<filter-class>org.jasig.cas.client.util.HttpServletRequestWrapperFilter</filter-class>-->
+  <!--</filter>-->
+  <!--<filter-mapping>-->
+  <!--<filter-name>CAS HttpServletRequest Wrapper Filter</filter-name>-->
+  <!--<url-pattern>/*</url-pattern>-->
+  <!--</filter-mapping>-->
+  <!-- =============== 单点登录结束 ================= -->
+
+
+
+</web-app>

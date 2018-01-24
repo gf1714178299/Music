@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gf.musics.web.dao.UserMapper">
+  <resultMap id="BaseResultMap" type="com.gf.musics.web.model.User">
+    <id column="pk_id" jdbcType="INTEGER" property="pkId" />
+    <result column="user_account" jdbcType="VARCHAR" property="userAccount" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+    <result column="user_name" jdbcType="VARCHAR" property="userName" />
+    <result column="user_style" jdbcType="VARCHAR" property="userName" />
+    <result column="user_gender" jdbcType="INTEGER" property="userGender" />
+    <result column="user_avartr" jdbcType="VARCHAR" property="userAvartr" />
+    <result column="user_qq" jdbcType="VARCHAR" property="userQq" />
+    <result column="user_wechat" jdbcType="VARCHAR" property="userWechat" />
+    <result column="user_mailbox" jdbcType="VARCHAR" property="userMailbox" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    pk_id, user_account, password, user_name, user_style,user_gender, user_avartr, user_qq, user_wechat,
+    user_mailbox, create_time
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from t_user
+    where pk_id = #{pkId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from t_user
+    where pk_id = #{pkId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.gf.musics.web.model.User">
+    insert into t_user (pk_id, user_account, password, 
+      user_name,user_style, user_gender, user_avartr,
+      user_qq, user_wechat, user_mailbox,
+      create_time)
+    values (#{pkId,jdbcType=INTEGER}, #{userAccount,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, 
+      #{userName,jdbcType=VARCHAR},#{userStyle,jdbcType=VARCHAR}, #{userGender,jdbcType=INTEGER}, #{userAvartr,jdbcType=VARCHAR},
+      #{userQq,jdbcType=VARCHAR}, #{userWechat,jdbcType=VARCHAR}, #{userMailbox,jdbcType=VARCHAR}, 
+      #{createTime,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.gf.musics.web.model.User">
+    insert into t_user
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="pkId != null">
+        pk_id,
+      </if>
+      <if test="userAccount != null">
+        user_account,
+      </if>
+      <if test="password != null">
+        password,
+      </if>
+      <if test="userName != null">
+        user_name,
+      </if>
+      <if test="userStyle != null">
+        user_style,
+      </if>
+      <if test="userGender != null">
+        user_gender,
+      </if>
+      <if test="userAvartr != null">
+        user_avartr,
+      </if>
+      <if test="userQq != null">
+        user_qq,
+      </if>
+      <if test="userWechat != null">
+        user_wechat,
+      </if>
+      <if test="userMailbox != null">
+        user_mailbox,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="pkId != null">
+        #{pkId,jdbcType=INTEGER},
+      </if>
+      <if test="userAccount != null">
+        #{userAccount,jdbcType=VARCHAR},
+      </if>
+      <if test="password != null">
+        #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="userName != null">
+        #{userName,jdbcType=VARCHAR},
+      </if>
+      <if test="userStyle != null">
+        #{userStyle,jdbcType=VARCHAR},
+      </if>
+      <if test="userGender != null">
+        #{userGender,jdbcType=INTEGER},
+      </if>
+      <if test="userAvartr != null">
+        #{userAvartr,jdbcType=VARCHAR},
+      </if>
+      <if test="userQq != null">
+        #{userQq,jdbcType=VARCHAR},
+      </if>
+      <if test="userWechat != null">
+        #{userWechat,jdbcType=VARCHAR},
+      </if>
+      <if test="userMailbox != null">
+        #{userMailbox,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.gf.musics.web.model.User">
+    update t_user
+    <set>
+      <if test="userAccount != null">
+        user_account = #{userAccount,jdbcType=VARCHAR},
+      </if>
+      <if test="password != null">
+        password = #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="userName != null">
+        user_name = #{userName,jdbcType=VARCHAR},
+      </if>
+      <if test="userStyle != null">
+        user_style = #{userStyle,jdbcType=VARCHAR},
+      </if>
+      <if test="userGender != null">
+        user_gender = #{userGender,jdbcType=INTEGER},
+      </if>
+      <if test="userAvartr != null">
+        user_avartr = #{userAvartr,jdbcType=VARCHAR},
+      </if>
+      <if test="userQq != null">
+        user_qq = #{userQq,jdbcType=VARCHAR},
+      </if>
+      <if test="userWechat != null">
+        user_wechat = #{userWechat,jdbcType=VARCHAR},
+      </if>
+      <if test="userMailbox != null">
+        user_mailbox = #{userMailbox,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where pk_id = #{pkId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.gf.musics.web.model.User">
+    update t_user
+    set user_account = #{userAccount,jdbcType=VARCHAR},
+      password = #{password,jdbcType=VARCHAR},
+      user_name = #{userName,jdbcType=VARCHAR},
+      user_style = #{userStyle,jdbcType=VARCHAR},
+      user_gender = #{userGender,jdbcType=INTEGER},
+      user_avartr = #{userAvartr,jdbcType=VARCHAR},
+      user_qq = #{userQq,jdbcType=VARCHAR},
+      user_wechat = #{userWechat,jdbcType=VARCHAR},
+      user_mailbox = #{userMailbox,jdbcType=VARCHAR},
+      create_time = #{createTime,jdbcType=TIMESTAMP}
+    where pk_id = #{pkId,jdbcType=INTEGER}
+  </update>
+  <select id="selectByAccount" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select pk_id,user_account,user_qq,user_wechat,user_mailbox
+    from t_user
+    where user_account = #{account,jdbcType=VARCHAR}
+  </select>
+  <select id="selectByQq" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select pk_id,user_account,user_qq,user_wechat,user_mailbox
+    from t_user
+    where user_qq = #{qq,jdbcType=VARCHAR}
+  </select>
+  <select id="selectByWechat" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select pk_id,user_account,user_qq,user_wechat,user_mailbox
+    from t_user
+    where user_wechat = #{wx,jdbcType=VARCHAR}
+  </select>
+  <select id="selectByMailbox" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select pk_id,user_account,user_qq,user_wechat,user_mailbox
+    from t_user
+    where user_mailbox = #{mail,jdbcType=VARCHAR}
+  </select>
+</mapper>

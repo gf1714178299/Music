@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--<bean id="propertyConfigurer"-->
+    <!--class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">-->
+    <!--<property name="ignoreUnresolvablePlaceholders" value="true" />-->
+    <!--<property name="location" value="classpath:configs/redis.properties" />-->
+    <!--</bean>-->
+
+    <bean id="jedisPoolConfig" class="redis.clients.jedis.JedisPoolConfig">
+        <property name="maxActive" value="600"/>    <!--最大连接数-->
+        <property name="maxIdle" value="300"/>     <!--最大空闲数-->
+        <property name="maxWait" value="1000"/>    <!--最大等待时间ms-->
+        <property name="testOnBorrow" value="true"/>
+    </bean>
+
+    <!-- spring data redis -->
+    <bean id="jedisConnectionFactory" class="org.springframework.data.redis.connection.jedis.JedisConnectionFactory">
+        <property name="usePool" value="true"/>
+
+        <!-- 生产环境 -->
+        <!--<property name="hostName" value="r-bp13e5e2a26f1784.redis.rds.aliyuncs.com" />-->
+        <!--<property name="password" value="njbdNetWork133"/>-->
+
+        <!-- 本地环境 -->
+        <property name="hostName" value="127.0.0.1"/>
+        <!--<property name="password" value="123456"/>-->
+        <property name="port" value="6379"/>
+        <!--超时时间 单位 ： 秒-->
+        <property name="timeout" value="3000"/>
+        <property name="database" value="0"/>
+        <constructor-arg index="0" ref="jedisPoolConfig"/>
+
+    </bean>
+
+    <bean id="redisTemplate" class="org.springframework.data.redis.core.RedisTemplate">
+        <property name="connectionFactory" ref="jedisConnectionFactory"/>
+    </bean>
+
+
+</beans>

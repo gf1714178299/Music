@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gf.musics.web.dao.MusicLibraryMapper">
+  <resultMap id="BaseResultMap" type="com.gf.musics.web.model.MusicLibrary">
+    <id column="pk_id" jdbcType="INTEGER" property="pkId" />
+    <result column="music_name" jdbcType="VARCHAR" property="musicName" />
+    <result column="singer_id" jdbcType="VARCHAR" property="singerId" />
+    <result column="singer_name" jdbcType="VARCHAR" property="singerName" />
+    <result column="music_img_url" jdbcType="VARCHAR" property="musicImgUrl" />
+    <result column="music_url" jdbcType="VARCHAR" property="musicUrl" />
+    <result column="music_mv_url" jdbcType="VARCHAR" property="musicMvUrl" />
+    <result column="music_geci" jdbcType="VARCHAR" property="musicGeci" />
+    <result column="music_duration" jdbcType="VARCHAR" property="musicDuration" />
+    <result column="music_size" jdbcType="REAL" property="musicSize" />
+    <result column="clicks" jdbcType="INTEGER" property="clicks" />
+    <result column="album" jdbcType="VARCHAR" property="album" />
+    <result column="style_id" jdbcType="INTEGER" property="styleId" />
+    <result column="quality" jdbcType="INTEGER" property="quality" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="publish_date" jdbcType="TIMESTAMP" property="publishDate" />
+    <result column="delete_flag" jdbcType="INTEGER" property="deleteFlag" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    pk_id, music_name, singer_id, singer_name, music_img_url, music_url, music_mv_url, 
+    music_geci, music_duration, music_size, clicks, album, style_id, quality, status, 
+    publish_date, delete_flag, create_time, update_time
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from t_musiclibrary
+    where pk_id = #{pkId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from t_musiclibrary
+    where pk_id = #{pkId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.gf.musics.web.model.MusicLibrary">
+    insert into t_musiclibrary (pk_id, music_name, singer_id, 
+      singer_name, music_img_url, music_url, 
+      music_mv_url, music_geci, music_duration, 
+      music_size, clicks, album, 
+      style_id, quality, status, 
+      publish_date, delete_flag, create_time, 
+      update_time)
+    values (#{pkId,jdbcType=INTEGER}, #{musicName,jdbcType=VARCHAR}, #{singerId,jdbcType=VARCHAR}, 
+      #{singerName,jdbcType=VARCHAR}, #{musicImgUrl,jdbcType=VARCHAR}, #{musicUrl,jdbcType=VARCHAR}, 
+      #{musicMvUrl,jdbcType=VARCHAR}, #{musicGeci,jdbcType=VARCHAR}, #{musicDuration,jdbcType=VARCHAR}, 
+      #{musicSize,jdbcType=REAL}, #{clicks,jdbcType=INTEGER}, #{album,jdbcType=VARCHAR}, 
+      #{styleId,jdbcType=INTEGER}, #{quality,jdbcType=INTEGER}, #{status,jdbcType=INTEGER}, 
+      #{publishDate,jdbcType=TIMESTAMP}, #{deleteFlag,jdbcType=INTEGER}, #{createTime,jdbcType=TIMESTAMP}, 
+      #{updateTime,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.gf.musics.web.model.MusicLibrary">
+    insert into t_musiclibrary
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="pkId != null">
+        pk_id,
+      </if>
+      <if test="musicName != null">
+        music_name,
+      </if>
+      <if test="singerId != null">
+        singer_id,
+      </if>
+      <if test="singerName != null">
+        singer_name,
+      </if>
+      <if test="musicImgUrl != null">
+        music_img_url,
+      </if>
+      <if test="musicUrl != null">
+        music_url,
+      </if>
+      <if test="musicMvUrl != null">
+        music_mv_url,
+      </if>
+      <if test="musicGeci != null">
+        music_geci,
+      </if>
+      <if test="musicDuration != null">
+        music_duration,
+      </if>
+      <if test="musicSize != null">
+        music_size,
+      </if>
+      <if test="clicks != null">
+        clicks,
+      </if>
+      <if test="album != null">
+        album,
+      </if>
+      <if test="styleId != null">
+        style_id,
+      </if>
+      <if test="quality != null">
+        quality,
+      </if>
+      <if test="status != null">
+        status,
+      </if>
+      <if test="publishDate != null">
+        publish_date,
+      </if>
+      <if test="deleteFlag != null">
+        delete_flag,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="updateTime != null">
+        update_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="pkId != null">
+        #{pkId,jdbcType=INTEGER},
+      </if>
+      <if test="musicName != null">
+        #{musicName,jdbcType=VARCHAR},
+      </if>
+      <if test="singerId != null">
+        #{singerId,jdbcType=VARCHAR},
+      </if>
+      <if test="singerName != null">
+        #{singerName,jdbcType=VARCHAR},
+      </if>
+      <if test="musicImgUrl != null">
+        #{musicImgUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="musicUrl != null">
+        #{musicUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="musicMvUrl != null">
+        #{musicMvUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="musicGeci != null">
+        #{musicGeci,jdbcType=VARCHAR},
+      </if>
+      <if test="musicDuration != null">
+        #{musicDuration,jdbcType=VARCHAR},
+      </if>
+      <if test="musicSize != null">
+        #{musicSize,jdbcType=REAL},
+      </if>
+      <if test="clicks != null">
+        #{clicks,jdbcType=INTEGER},
+      </if>
+      <if test="album != null">
+        #{album,jdbcType=VARCHAR},
+      </if>
+      <if test="styleId != null">
+        #{styleId,jdbcType=INTEGER},
+      </if>
+      <if test="quality != null">
+        #{quality,jdbcType=INTEGER},
+      </if>
+      <if test="status != null">
+        #{status,jdbcType=INTEGER},
+      </if>
+      <if test="publishDate != null">
+        #{publishDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="deleteFlag != null">
+        #{deleteFlag,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null">
+        #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.gf.musics.web.model.MusicLibrary">
+    update t_musiclibrary
+    <set>
+      <if test="musicName != null">
+        music_name = #{musicName,jdbcType=VARCHAR},
+      </if>
+      <if test="singerId != null">
+        singer_id = #{singerId,jdbcType=VARCHAR},
+      </if>
+      <if test="singerName != null">
+        singer_name = #{singerName,jdbcType=VARCHAR},
+      </if>
+      <if test="musicImgUrl != null">
+        music_img_url = #{musicImgUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="musicUrl != null">
+        music_url = #{musicUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="musicMvUrl != null">
+        music_mv_url = #{musicMvUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="musicGeci != null">
+        music_geci = #{musicGeci,jdbcType=VARCHAR},
+      </if>
+      <if test="musicDuration != null">
+        music_duration = #{musicDuration,jdbcType=VARCHAR},
+      </if>
+      <if test="musicSize != null">
+        music_size = #{musicSize,jdbcType=REAL},
+      </if>
+      <if test="clicks != null">
+        clicks = #{clicks,jdbcType=INTEGER},
+      </if>
+      <if test="album != null">
+        album = #{album,jdbcType=VARCHAR},
+      </if>
+      <if test="styleId != null">
+        style_id = #{styleId,jdbcType=INTEGER},
+      </if>
+      <if test="quality != null">
+        quality = #{quality,jdbcType=INTEGER},
+      </if>
+      <if test="status != null">
+        status = #{status,jdbcType=INTEGER},
+      </if>
+      <if test="publishDate != null">
+        publish_date = #{publishDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="deleteFlag != null">
+        delete_flag = #{deleteFlag,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null">
+        update_time = #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where pk_id = #{pkId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.gf.musics.web.model.MusicLibrary">
+    update t_musiclibrary
+    set music_name = #{musicName,jdbcType=VARCHAR},
+      singer_id = #{singerId,jdbcType=VARCHAR},
+      singer_name = #{singerName,jdbcType=VARCHAR},
+      music_img_url = #{musicImgUrl,jdbcType=VARCHAR},
+      music_url = #{musicUrl,jdbcType=VARCHAR},
+      music_mv_url = #{musicMvUrl,jdbcType=VARCHAR},
+      music_geci = #{musicGeci,jdbcType=VARCHAR},
+      music_duration = #{musicDuration,jdbcType=VARCHAR},
+      music_size = #{musicSize,jdbcType=REAL},
+      clicks = #{clicks,jdbcType=INTEGER},
+      album = #{album,jdbcType=VARCHAR},
+      style_id = #{styleId,jdbcType=INTEGER},
+      quality = #{quality,jdbcType=INTEGER},
+      status = #{status,jdbcType=INTEGER},
+      publish_date = #{publishDate,jdbcType=TIMESTAMP},
+      delete_flag = #{deleteFlag,jdbcType=INTEGER},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      update_time = #{updateTime,jdbcType=TIMESTAMP}
+    where pk_id = #{pkId,jdbcType=INTEGER}
+  </update>
+  <select id="getBlurryMusicLibraryList" parameterType="java.util.HashMap" resultMap="BaseResultMap">
+    SELECT
+    <include refid="Base_Column_List" />
+    FROM t_musiclibrary
+    <trim prefix="WHERE" prefixOverrides="AND|OR">
+      delete_flag = 0
+      <if test="keyWords!=null and keyWords!='' ">
+        AND music_name =LIKE concat(concat('%',#{keyWords}),'%')
+      </if>
+    </trim>
+    ORDER BY update_time DESC
+    <if test="index != null and length != null">
+      LIMIT #{index},#{length}
+    </if>
+  </select>
+  <select id="selectByPage" parameterType="java.util.HashMap" resultMap="BaseResultMap">
+    SELECT
+    <include refid="Base_Column_List" />
+    from t_musiclibrary
+    <trim prefix="WHERE" prefixOverrides="AND|OR">
+      delete_flag = 0
+      <if test="keyWords != null  and keyWords != ''">
+        AND singer_name  LIKE concat(concat('%',#{keyWords}),'%')
+        OR  music_name LIKE concat(concat('%',#{keyWords}),'%')
+      </if>
+      <if test="singerId != null and singerId != ''">
+        AND singer_id = #{singerId}
+      </if>
+    </trim>
+    ORDER BY clicks DESC ,publish_date DESC,singer_name ASC
+    <if test="index != null and length != null">
+      LIMIT #{index},#{length}
+    </if>
+  </select>
+  <select id="selectByCount" parameterType="java.util.HashMap" resultType="java.lang.Integer">
+    SELECT COUNT(1)
+    from t_musiclibrary
+    <trim prefix="WHERE" prefixOverrides="AND|OR">
+      delete_flag = 0
+      <if test="keyWords != null  and keyWords != ''">
+        AND singer_name  LIKE concat(concat('%',#{keyWords}),'%')
+        OR  music_name LIKE concat(concat('%',#{keyWords}),'%')
+      </if>
+      <if test="singerId != null and singerId != ''">
+        AND singer_id = #{singerId}
+      </if>
+    </trim>
+  </select>
+  <select id="selectMusiclibraryByNewApi" parameterType="java.util.HashMap" resultMap="BaseResultMap">
+    SELECT
+    <include refid="Base_Column_List" />
+    from t_musiclibrary
+    <trim prefix="WHERE" prefixOverrides="AND|OR">
+      delete_flag = 0
+      <if test="keyWords != null  and keyWords != ''">
+        AND singer_name  LIKE concat(concat('%',#{keyWords}),'%')
+        OR  music_name LIKE concat(concat('%',#{keyWords}),'%')
+      </if>
+      <if test="singerId != null and singerId != ''">
+        AND singer_id = #{singerId}
+      </if>
+    </trim>
+    ORDER BY publish_date DESC ,clicks DESC,singer_name ASC
+  </select>
+  <select id="selectRecommendMusiclibraryByApi" parameterType="java.util.HashMap" resultMap="BaseResultMap">
+    SELECT
+    <include refid="Base_Column_List" />
+    from t_musiclibrary
+    <trim prefix="WHERE" prefixOverrides="AND|OR">
+      delete_flag = 0
+      <if test="styleId != null">
+        AND style_id IN
+        <foreach item="styleId" index="index" collection="styleId" open="(" separator="," close=")">
+           #{styleId}
+        </foreach>
+      </if>
+    </trim>
+    ORDER BY clicks DESC ,publish_date DESC,singer_name ASC limit 10
+  </select>
+  <select id="selectMyLikeMusic" parameterType="java.util.HashMap" resultMap="BaseResultMap">
+    SELECT
+    <include refid="Base_Column_List" />
+    from t_musiclibrary
+    <trim prefix="WHERE" prefixOverrides="AND|OR">
+      delete_flag = 0
+      <if test="musicId != null">
+        AND pk_id IN
+        <foreach item="musicId" index="index" collection="musicId" open="(" separator="," close=")">
+          #{musicId}
+        </foreach>
+      </if>
+    </trim>
+    ORDER BY create_time DESC
+  </select>
+</mapper>

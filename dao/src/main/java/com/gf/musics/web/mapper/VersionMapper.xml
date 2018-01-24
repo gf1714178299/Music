@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.gf.musics.web.dao.VersionMapper" >
+  <resultMap id="BaseResultMap" type="com.gf.musics.web.model.Version" >
+    <id column="pk_id" property="pkId" jdbcType="VARCHAR" />
+    <result column="clientType" property="clienttype" jdbcType="VARCHAR" />
+    <result column="now_version" property="nowVersion" jdbcType="VARCHAR" />
+    <result column="max_version" property="maxVersion" jdbcType="VARCHAR" />
+    <result column="min_version" property="minVersion" jdbcType="VARCHAR" />
+    <result column="download_url" property="downloadUrl" jdbcType="VARCHAR" />
+    <result column="description" property="description" jdbcType="VARCHAR" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    pk_id, clientType, now_version, max_version, min_version, download_url, description, 
+    create_time, update_time
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    from t_version
+    where pk_id = #{pkId,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from t_version
+    where pk_id = #{pkId,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.gf.musics.web.model.Version" >
+    insert into t_version (pk_id, clientType, now_version, 
+      max_version, min_version, download_url, 
+      description, create_time, update_time
+      )
+    values (#{pkId,jdbcType=VARCHAR}, #{clienttype,jdbcType=VARCHAR}, #{nowVersion,jdbcType=VARCHAR}, 
+      #{maxVersion,jdbcType=VARCHAR}, #{minVersion,jdbcType=VARCHAR}, #{downloadUrl,jdbcType=VARCHAR}, 
+      #{description,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP}, #{updateTime,jdbcType=TIMESTAMP}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.gf.musics.web.model.Version" >
+    insert into t_version
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="pkId != null" >
+        pk_id,
+      </if>
+      <if test="clienttype != null" >
+        clientType,
+      </if>
+      <if test="nowVersion != null" >
+        now_version,
+      </if>
+      <if test="maxVersion != null" >
+        max_version,
+      </if>
+      <if test="minVersion != null" >
+        min_version,
+      </if>
+      <if test="downloadUrl != null" >
+        download_url,
+      </if>
+      <if test="description != null" >
+        description,
+      </if>
+      <if test="createTime != null" >
+        create_time,
+      </if>
+      <if test="updateTime != null" >
+        update_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="pkId != null" >
+        #{pkId,jdbcType=VARCHAR},
+      </if>
+      <if test="clienttype != null" >
+        #{clienttype,jdbcType=VARCHAR},
+      </if>
+      <if test="nowVersion != null" >
+        #{nowVersion,jdbcType=VARCHAR},
+      </if>
+      <if test="maxVersion != null" >
+        #{maxVersion,jdbcType=VARCHAR},
+      </if>
+      <if test="minVersion != null" >
+        #{minVersion,jdbcType=VARCHAR},
+      </if>
+      <if test="downloadUrl != null" >
+        #{downloadUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="description != null" >
+        #{description,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null" >
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null" >
+        #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.gf.musics.web.model.Version" >
+    update t_version
+    <set >
+      <if test="clienttype != null" >
+        clientType = #{clienttype,jdbcType=VARCHAR},
+      </if>
+      <if test="nowVersion != null" >
+        now_version = #{nowVersion,jdbcType=VARCHAR},
+      </if>
+      <if test="maxVersion != null" >
+        max_version = #{maxVersion,jdbcType=VARCHAR},
+      </if>
+      <if test="minVersion != null" >
+        min_version = #{minVersion,jdbcType=VARCHAR},
+      </if>
+      <if test="downloadUrl != null" >
+        download_url = #{downloadUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="description != null" >
+        description = #{description,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null" >
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null" >
+        update_time = #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where pk_id = #{pkId,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.gf.musics.web.model.Version" >
+    update t_version
+    set clientType = #{clienttype,jdbcType=VARCHAR},
+      now_version = #{nowVersion,jdbcType=VARCHAR},
+      max_version = #{maxVersion,jdbcType=VARCHAR},
+      min_version = #{minVersion,jdbcType=VARCHAR},
+      download_url = #{downloadUrl,jdbcType=VARCHAR},
+      description = #{description,jdbcType=VARCHAR},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      update_time = #{updateTime,jdbcType=TIMESTAMP}
+    where pk_id = #{pkId,jdbcType=VARCHAR}
+  </update>
+</mapper>
