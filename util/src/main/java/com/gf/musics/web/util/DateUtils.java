@@ -124,6 +124,15 @@ public class DateUtils {
         /*String dateStr = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss").format(date);*/
         return now_date;
     }
+    /**
+     * 将日期转换成字符串
+     */
+    public static String parseYYYY(Date date) {
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        String now_date = simpleDateFormat.format(date);
+        /*String dateStr = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss").format(date);*/
+        return now_date;
+    }
 
     public static String getTime() {
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("HH:mm:ss");

@@ -328,7 +328,7 @@
       delete_flag = 0
       <if test="styleId != null">
         AND style_id IN
-        <foreach item="styleId" index="index" collection="styleId" open="(" separator="," close=")">
+        <foreach close=")" collection="styleId" index="index" item="styleId" open="(" separator=",">
            #{styleId}
         </foreach>
       </if>
@@ -343,11 +343,16 @@
       delete_flag = 0
       <if test="musicId != null">
         AND pk_id IN
-        <foreach item="musicId" index="index" collection="musicId" open="(" separator="," close=")">
+        <foreach close=")" collection="musicId" index="index" item="musicId" open="(" separator=",">
           #{musicId}
         </foreach>
       </if>
     </trim>
     ORDER BY create_time DESC
+  </select>
+  <select id="selectByAlbumCount" parameterType="java.lang.String" resultType="java.lang.Integer">
+    SELECT COUNT(1)
+    from t_musiclibrary
+    WHERE delete_flag = 0 AND album = #{album}
   </select>
 </mapper>

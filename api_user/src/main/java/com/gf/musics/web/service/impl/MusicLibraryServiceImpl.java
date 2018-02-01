@@ -1,18 +1,15 @@
 package com.gf.musics.web.service.impl;
 
 import com.gf.musics.web.constant.APIConstant;
-import com.gf.musics.web.constant.ParameterConstant;
 import com.gf.musics.web.constant.ResponseConstant;
 import com.gf.musics.web.dao.AlbumMapper;
+import com.gf.musics.web.dao.EmotionMapper;
 import com.gf.musics.web.dao.MusicLibraryMapper;
-import com.gf.musics.web.dao.SingerStyleMapper;
-import com.gf.musics.web.model.Album;
 import com.gf.musics.web.model.MusicLibrary;
 import com.gf.musics.web.service.MusicLibraryService;
 import com.gf.musics.web.util.StringUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -25,7 +22,7 @@ public class MusicLibraryServiceImpl implements MusicLibraryService{
     @Autowired
     private MusicLibraryMapper musicLibraryMapper;
     @Autowired
-    private SingerStyleMapper singerStyleMapper;
+    private EmotionMapper emotionMapper;
     @Autowired
     private AlbumMapper albumMapper;
 
@@ -55,7 +52,7 @@ public class MusicLibraryServiceImpl implements MusicLibraryService{
                 remap.put(APIConstant.ALBUM_NAME,"");
             }
             if (null != musicLibraryList1.getStyleId()){
-                remap.put(APIConstant.SINGER_STYLE_NAME,singerStyleMapper.selectByPrimaryKey(Integer.valueOf(musicLibraryList1.getStyleId())).getStyleName());
+                remap.put(APIConstant.SINGER_STYLE_NAME,emotionMapper.selectByPrimaryKey(Integer.valueOf(musicLibraryList1.getStyleId())).getEmotion());
             }else {
                 remap.put(APIConstant.SINGER_STYLE_NAME,"");
             }
@@ -100,7 +97,7 @@ public class MusicLibraryServiceImpl implements MusicLibraryService{
                 remap.put(APIConstant.ALBUM_NAME,"");
             }
             if (null != musicLibraryList1.getStyleId()){
-                remap.put(APIConstant.SINGER_STYLE_NAME,singerStyleMapper.selectByPrimaryKey(Integer.valueOf(musicLibraryList1.getStyleId())).getStyleName());
+                remap.put(APIConstant.SINGER_STYLE_NAME,emotionMapper.selectByPrimaryKey(Integer.valueOf(musicLibraryList1.getStyleId())).getEmotion());
             }else {
                 remap.put(APIConstant.SINGER_STYLE_NAME,"");
             }

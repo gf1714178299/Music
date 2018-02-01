@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gf.musics.web.dao.RecommendedSongListMapper">
+  <resultMap id="BaseResultMap" type="com.gf.musics.web.model.RecommendedSongList">
+    <id column="pk_id" jdbcType="INTEGER" property="pkId" />
+    <result column="song_list_id" jdbcType="INTEGER" property="songListId" />
+    <result column="music_id" jdbcType="INTEGER" property="musicId" />
+    <result column="delete_flag" jdbcType="INTEGER" property="deleteFlag" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    pk_id, song_list_id, music_id, delete_flag, create_time, update_time
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from t_recommended_song_list
+    where pk_id = #{pkId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from t_recommended_song_list
+    where pk_id = #{pkId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.gf.musics.web.model.RecommendedSongList">
+    insert into t_recommended_song_list (pk_id, song_list_id, music_id, 
+      delete_flag, create_time, update_time
+      )
+    values (#{pkId,jdbcType=INTEGER}, #{songListId,jdbcType=INTEGER}, #{musicId,jdbcType=INTEGER}, 
+      #{deleteFlag,jdbcType=INTEGER}, #{createTime,jdbcType=TIMESTAMP}, #{updateTime,jdbcType=TIMESTAMP}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.gf.musics.web.model.RecommendedSongList">
+    insert into t_recommended_song_list
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="pkId != null">
+        pk_id,
+      </if>
+      <if test="songListId != null">
+        song_list_id,
+      </if>
+      <if test="musicId != null">
+        music_id,
+      </if>
+      <if test="deleteFlag != null">
+        delete_flag,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="updateTime != null">
+        update_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="pkId != null">
+        #{pkId,jdbcType=INTEGER},
+      </if>
+      <if test="songListId != null">
+        #{songListId,jdbcType=INTEGER},
+      </if>
+      <if test="musicId != null">
+        #{musicId,jdbcType=INTEGER},
+      </if>
+      <if test="deleteFlag != null">
+        #{deleteFlag,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null">
+        #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.gf.musics.web.model.RecommendedSongList">
+    update t_recommended_song_list
+    <set>
+      <if test="songListId != null">
+        song_list_id = #{songListId,jdbcType=INTEGER},
+      </if>
+      <if test="musicId != null">
+        music_id = #{musicId,jdbcType=INTEGER},
+      </if>
+      <if test="deleteFlag != null">
+        delete_flag = #{deleteFlag,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null">
+        update_time = #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where pk_id = #{pkId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.gf.musics.web.model.RecommendedSongList">
+    update t_recommended_song_list
+    set song_list_id = #{songListId,jdbcType=INTEGER},
+      music_id = #{musicId,jdbcType=INTEGER},
+      delete_flag = #{deleteFlag,jdbcType=INTEGER},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      update_time = #{updateTime,jdbcType=TIMESTAMP}
+    where pk_id = #{pkId,jdbcType=INTEGER}
+  </update>
+</mapper>

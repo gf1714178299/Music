@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gf.musics.web.dao.UserSongListMapper">
+  <resultMap id="BaseResultMap" type="com.gf.musics.web.model.UserSongList">
+    <id column="pk_id" jdbcType="INTEGER" property="pkId" />
+    <result column="user_id" jdbcType="VARCHAR" property="userId" />
+    <result column="song_list_name" jdbcType="VARCHAR" property="songListName" />
+    <result column="song_list_id" jdbcType="INTEGER" property="songListId" />
+    <result column="delete_flag" jdbcType="INTEGER" property="deleteFlag" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="statistics" jdbcType="INTEGER" property="statistics" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    pk_id, user_id, song_list_name, song_list_id, delete_flag, create_time, update_time, 
+    statistics
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from t_user_songlist
+    where pk_id = #{pkId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from t_user_songlist
+    where pk_id = #{pkId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.gf.musics.web.model.UserSongList">
+    insert into t_user_songlist (pk_id, user_id, song_list_name, 
+      song_list_id, delete_flag, create_time, 
+      update_time, statistics)
+    values (#{pkId,jdbcType=INTEGER}, #{userId,jdbcType=VARCHAR}, #{songListName,jdbcType=VARCHAR}, 
+      #{songListId,jdbcType=INTEGER}, #{deleteFlag,jdbcType=INTEGER}, #{createTime,jdbcType=TIMESTAMP}, 
+      #{updateTime,jdbcType=TIMESTAMP}, #{statistics,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="com.gf.musics.web.model.UserSongList">
+    insert into t_user_songlist
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="pkId != null">
+        pk_id,
+      </if>
+      <if test="userId != null">
+        user_id,
+      </if>
+      <if test="songListName != null">
+        song_list_name,
+      </if>
+      <if test="songListId != null">
+        song_list_id,
+      </if>
+      <if test="deleteFlag != null">
+        delete_flag,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="updateTime != null">
+        update_time,
+      </if>
+      <if test="statistics != null">
+        statistics,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="pkId != null">
+        #{pkId,jdbcType=INTEGER},
+      </if>
+      <if test="userId != null">
+        #{userId,jdbcType=VARCHAR},
+      </if>
+      <if test="songListName != null">
+        #{songListName,jdbcType=VARCHAR},
+      </if>
+      <if test="songListId != null">
+        #{songListId,jdbcType=INTEGER},
+      </if>
+      <if test="deleteFlag != null">
+        #{deleteFlag,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null">
+        #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="statistics != null">
+        #{statistics,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.gf.musics.web.model.UserSongList">
+    update t_user_songlist
+    <set>
+      <if test="userId != null">
+        user_id = #{userId,jdbcType=VARCHAR},
+      </if>
+      <if test="songListName != null">
+        song_list_name = #{songListName,jdbcType=VARCHAR},
+      </if>
+      <if test="songListId != null">
+        song_list_id = #{songListId,jdbcType=INTEGER},
+      </if>
+      <if test="deleteFlag != null">
+        delete_flag = #{deleteFlag,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null">
+        update_time = #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="statistics != null">
+        statistics = #{statistics,jdbcType=INTEGER},
+      </if>
+    </set>
+    where pk_id = #{pkId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.gf.musics.web.model.UserSongList">
+    update t_user_songlist
+    set user_id = #{userId,jdbcType=VARCHAR},
+      song_list_name = #{songListName,jdbcType=VARCHAR},
+      song_list_id = #{songListId,jdbcType=INTEGER},
+      delete_flag = #{deleteFlag,jdbcType=INTEGER},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      update_time = #{updateTime,jdbcType=TIMESTAMP},
+      statistics = #{statistics,jdbcType=INTEGER}
+    where pk_id = #{pkId,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPage" parameterType="java.util.HashMap" resultMap="BaseResultMap">
+    SELECT
+    <include refid="Base_Column_List" />
+    FROM t_user_songlist
+    <trim prefix="WHERE" prefixOverrides="AND|OR">
+      delete_flag = 0
+      <if test="userId!=null and userId!='' ">
+        AND user_id = #{userId}
+      </if>
+    </trim>
+    ORDER BY create_time DESC
+  </select>
+  <select id="selectByUserIdAndSongListId" parameterType="java.util.HashMap" resultMap="BaseResultMap">
+    SELECT
+    <include refid="Base_Column_List" />
+    FROM t_user_songlist
+    <trim prefix="WHERE" prefixOverrides="AND|OR">
+      delete_flag = 0
+      <if test="userId != null and userId != ''">
+        AND user_id = #{userId}
+      </if>
+      <if test="songListId != null and songListId != ''">
+        AND song_list_id = #{songListId}
+      </if>
+    </trim>
+  </select>
+</mapper>

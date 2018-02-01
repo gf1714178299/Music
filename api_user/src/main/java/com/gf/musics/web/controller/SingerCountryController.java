@@ -20,7 +20,7 @@ import java.util.Map;
 @Controller
 @RequestMapping(value = "singerCountry")
 public class SingerCountryController {
-    private final static Logger logger = LoggerFactory.getLogger(MusicLibraryController.class);
+    private final static Logger logger = LoggerFactory.getLogger(SingerCountryController.class);
     @Autowired
     private SingerCountryService singerCountryService;
 

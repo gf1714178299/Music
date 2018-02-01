@@ -16,4 +16,6 @@ public interface AlbumMapper {
     int updateByPrimaryKeySelective(Album record);
 
     int updateByPrimaryKey(Album record);
+
+    int selectSingerAlbumByCount(String singerId);
 }

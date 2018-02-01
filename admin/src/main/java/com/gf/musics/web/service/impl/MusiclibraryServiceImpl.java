@@ -3,13 +3,11 @@ package com.gf.musics.web.service.impl;
 import com.gf.musics.web.constant.ParameterConstant;
 import com.gf.musics.web.constant.ResponseConstant;
 import com.gf.musics.web.dao.AlbumMapper;
+import com.gf.musics.web.dao.EmotionMapper;
 import com.gf.musics.web.dao.MusicLibraryMapper;
-import com.gf.musics.web.dao.SingerStyleMapper;
 import com.gf.musics.web.model.MusicLibrary;
-import com.gf.musics.web.model.SingerStyle;
 import com.gf.musics.web.service.MusiclibraryService;
 import com.gf.musics.web.util.StringUtil;
-import org.apache.commons.httpclient.util.DateUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -21,7 +19,7 @@ public class MusiclibraryServiceImpl implements MusiclibraryService{
     @Autowired
     private MusicLibraryMapper musicLibraryMapper;
     @Autowired
-    private SingerStyleMapper singerStyleMapper;
+    private EmotionMapper emotionMapper;
     @Autowired
     private AlbumMapper albumMapper;
     @Override
@@ -46,7 +44,7 @@ public class MusiclibraryServiceImpl implements MusiclibraryService{
                 remap.put(ParameterConstant.ALBUM_NAME,"");
             }
             if (null != musicLibraryList1.getStyleId()){
-                remap.put(ParameterConstant.SINGER_STYLE_NAME,singerStyleMapper.selectByPrimaryKey(Integer.valueOf(musicLibraryList1.getStyleId())).getStyleName());
+                remap.put(ParameterConstant.SINGER_STYLE_NAME,emotionMapper.selectByPrimaryKey(Integer.valueOf(musicLibraryList1.getStyleId())).getEmotion());
             }else {
                 remap.put(ParameterConstant.SINGER_STYLE_NAME,"");
             }

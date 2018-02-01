@@ -39,7 +39,11 @@ public class APIConstant {
 
     public final static String USER_STYLE = "userStyle";
 
-    public final static String SONGLIST_MUSIC_ID = "songListMusicId";
+    public final static String USER_SONG_LIST = "userSongList";
+
+    public final static String SONG_LIST_ID = "songListId";
+
+    public final static String SONG_LIST_NAME = "songListName";
 
     //用户头像
     public final static String USER_AVARTR = "avartr";
@@ -113,5 +117,7 @@ public class APIConstant {
     public static final String SINGER_STYLE_NAME = "singerStyleName";
 
     public static final String KEY_WORDS = "keyWords";
+
+    public static final String EMOTION = "emotion";
 
 }

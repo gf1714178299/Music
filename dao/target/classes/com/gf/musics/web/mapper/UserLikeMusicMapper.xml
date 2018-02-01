@@ -96,8 +96,8 @@
      from t_user_like_music
     <trim prefix="WHERE" prefixOverrides="AND|OR">
       delete_flag = 0
-      <if test="account != null and account != ''">
-        AND user_id = #{account}
+      <if test="userId != null and userId != ''">
+        AND user_id = #{userId}
       </if>
     </trim>
     ORDER BY create_time DESC

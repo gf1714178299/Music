@@ -9,7 +9,85 @@
     <bookmark url="file://$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/mapper/ManagerMapper.xml" line="152" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8b451f6-7893-49f8-9c4f-098ffae7018d" name="Default" comment="" />
+    <list default="true" id="c8b451f6-7893-49f8-9c4f-098ffae7018d" name="Default" comment="ceshi">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/controller/RecommendedSongListController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/controller/SongListController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/service/SongListService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/service/impl/SongListServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/dao/SongListMusicMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/dao/UserSongListMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/mapper/UserSongListMapper.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/controller/TestController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/service/impl/TestServiceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api_user/target/api/WEB-INF/classes/com/gf/musics/web/controller/TestController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api_user/target/api/WEB-INF/classes/com/gf/musics/web/service/impl/TestServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api_user/target/classes/com/gf/musics/web/controller/TestController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api_user/target/classes/com/gf/musics/web/service/impl/TestServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/dao/SingerStyleMapper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/model/SingerStyle.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/model/UserSongList.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dao/target/classes/com/gf/musics/web/dao/SingerStyleMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dao/target/classes/com/gf/musics/web/mapper/SingerStyleMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dao/target/classes/com/gf/musics/web/model/SingerStyle.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/target/admin/WEB-INF/lib/dao-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/admin/target/admin/WEB-INF/lib/dao-1.0-SNAPSHOT.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/target/admin/WEB-INF/lib/util-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/admin/target/admin/WEB-INF/lib/util-1.0-SNAPSHOT.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api_user/target/api/WEB-INF/classes/com/gf/musics/web/controller/MusicLibraryController.class" afterPath="$PROJECT_DIR$/api_user/target/api/WEB-INF/classes/com/gf/musics/web/controller/MusicLibraryController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api_user/target/api/WEB-INF/classes/com/gf/musics/web/controller/MusicStyleController.class" afterPath="$PROJECT_DIR$/api_user/target/api/WEB-INF/classes/com/gf/musics/web/controller/MusicStyleController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api_user/target/api/WEB-INF/classes/com/gf/musics/web/controller/SingerCountryController.class" afterPath="$PROJECT_DIR$/api_user/target/api/WEB-INF/classes/com/gf/musics/web/controller/SingerCountryController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api_user/target/api/WEB-INF/classes/com/gf/musics/web/controller/UserController.class" afterPath="$PROJECT_DIR$/api_user/target/api/WEB-INF/classes/com/gf/musics/web/controller/UserController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api_user/target/api/WEB-INF/classes/com/gf/musics/web/service/UserService.class" afterPath="$PROJECT_DIR$/api_user/target/api/WEB-INF/classes/com/gf/musics/web/service/UserService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api_user/target/api/WEB-INF/classes/com/gf/musics/web/service/UserSongListService.class" afterPath="$PROJECT_DIR$/api_user/target/api/WEB-INF/classes/com/gf/musics/web/service/UserSongListService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api_user/target/api/WEB-INF/classes/com/gf/musics/web/service/impl/MusicLibraryServiceImpl.class" afterPath="$PROJECT_DIR$/api_user/target/api/WEB-INF/classes/com/gf/musics/web/service/impl/MusicLibraryServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api_user/target/api/WEB-INF/classes/com/gf/musics/web/service/impl/RecommendServiceImpl.class" afterPath="$PROJECT_DIR$/api_user/target/api/WEB-INF/classes/com/gf/musics/web/service/impl/RecommendServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api_user/target/api/WEB-INF/classes/com/gf/musics/web/service/impl/UserServiceImpl.class" afterPath="$PROJECT_DIR$/api_user/target/api/WEB-INF/classes/com/gf/musics/web/service/impl/UserServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api_user/target/api/WEB-INF/classes/com/gf/musics/web/service/impl/UserSongListServiceImpl.class" afterPath="$PROJECT_DIR$/api_user/target/api/WEB-INF/classes/com/gf/musics/web/service/impl/UserSongListServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api_user/target/api/WEB-INF/lib/dao-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/api_user/target/api/WEB-INF/lib/dao-1.0-SNAPSHOT.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api_user/target/api/WEB-INF/lib/util-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/api_user/target/api/WEB-INF/lib/util-1.0-SNAPSHOT.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api_user/target/classes/com/gf/musics/web/controller/MusicLibraryController.class" afterPath="$PROJECT_DIR$/api_user/target/classes/com/gf/musics/web/controller/MusicLibraryController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api_user/target/classes/com/gf/musics/web/controller/MusicStyleController.class" afterPath="$PROJECT_DIR$/api_user/target/classes/com/gf/musics/web/controller/MusicStyleController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api_user/target/classes/com/gf/musics/web/controller/SingerCountryController.class" afterPath="$PROJECT_DIR$/api_user/target/classes/com/gf/musics/web/controller/SingerCountryController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api_user/target/classes/com/gf/musics/web/controller/UserController.class" afterPath="$PROJECT_DIR$/api_user/target/classes/com/gf/musics/web/controller/UserController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api_user/target/classes/com/gf/musics/web/service/UserService.class" afterPath="$PROJECT_DIR$/api_user/target/classes/com/gf/musics/web/service/UserService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api_user/target/classes/com/gf/musics/web/service/UserSongListService.class" afterPath="$PROJECT_DIR$/api_user/target/classes/com/gf/musics/web/service/UserSongListService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api_user/target/classes/com/gf/musics/web/service/impl/MusicLibraryServiceImpl.class" afterPath="$PROJECT_DIR$/api_user/target/classes/com/gf/musics/web/service/impl/MusicLibraryServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api_user/target/classes/com/gf/musics/web/service/impl/RecommendServiceImpl.class" afterPath="$PROJECT_DIR$/api_user/target/classes/com/gf/musics/web/service/impl/RecommendServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api_user/target/classes/com/gf/musics/web/service/impl/UserServiceImpl.class" afterPath="$PROJECT_DIR$/api_user/target/classes/com/gf/musics/web/service/impl/UserServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api_user/target/classes/com/gf/musics/web/service/impl/UserSongListServiceImpl.class" afterPath="$PROJECT_DIR$/api_user/target/classes/com/gf/musics/web/service/impl/UserSongListServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/target/classes/com/gf/musics/web/constant/APIConstant.class" afterPath="$PROJECT_DIR$/dao/target/classes/com/gf/musics/web/constant/APIConstant.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/target/classes/com/gf/musics/web/dao/AlbumMapper.class" afterPath="$PROJECT_DIR$/dao/target/classes/com/gf/musics/web/dao/AlbumMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/target/classes/com/gf/musics/web/dao/MusicLibraryMapper.class" afterPath="$PROJECT_DIR$/dao/target/classes/com/gf/musics/web/dao/MusicLibraryMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/target/classes/com/gf/musics/web/model/Album.class" afterPath="$PROJECT_DIR$/dao/target/classes/com/gf/musics/web/model/Album.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/target/classes/com/gf/musics/web/model/SongListMusic.class" afterPath="$PROJECT_DIR$/dao/target/classes/com/gf/musics/web/model/SongListMusic.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/target/classes/com/gf/musics/web/model/UserSongList.class" afterPath="$PROJECT_DIR$/dao/target/classes/com/gf/musics/web/model/UserSongList.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/util/target/classes/com/gf/musics/web/util/DateUtils.class" afterPath="$PROJECT_DIR$/util/target/classes/com/gf/musics/web/util/DateUtils.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/src/main/java/com/gf/musics/web/service/impl/MusiclibraryServiceImpl.java" afterPath="$PROJECT_DIR$/admin/src/main/java/com/gf/musics/web/service/impl/MusiclibraryServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/controller/MusicLibraryController.java" afterPath="$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/controller/MusicLibraryController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/controller/MusicStyleController.java" afterPath="$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/controller/MusicStyleController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/controller/SingerCountryController.java" afterPath="$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/controller/SingerCountryController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/controller/UserController.java" afterPath="$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/controller/UserController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/service/UserService.java" afterPath="$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/service/UserService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/service/UserSongListService.java" afterPath="$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/service/UserSongListService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/service/impl/MusicLibraryServiceImpl.java" afterPath="$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/service/impl/MusicLibraryServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/service/impl/RecommendServiceImpl.java" afterPath="$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/service/impl/RecommendServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/service/impl/UserServiceImpl.java" afterPath="$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/service/impl/UserServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/service/impl/UserSongListServiceImpl.java" afterPath="$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/service/impl/UserSongListServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/constant/APIConstant.java" afterPath="$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/constant/APIConstant.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/dao/AlbumMapper.java" afterPath="$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/dao/AlbumMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/dao/MusicLibraryMapper.java" afterPath="$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/dao/MusicLibraryMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/mapper/AlbumMapper.xml" afterPath="$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/mapper/AlbumMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/mapper/MusicLibraryMapper.xml" afterPath="$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/mapper/MusicLibraryMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/mapper/UserLikeMusicMapper.xml" afterPath="$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/mapper/UserLikeMusicMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/model/Album.java" afterPath="$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/model/Album.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/model/SongListMusic.java" afterPath="$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/model/SongListMusic.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/src/main/resources/mybatis/generatorConfig.xml" afterPath="$PROJECT_DIR$/dao/src/main/resources/mybatis/generatorConfig.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/target/classes/com/gf/musics/web/mapper/AlbumMapper.xml" afterPath="$PROJECT_DIR$/dao/target/classes/com/gf/musics/web/mapper/AlbumMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/target/classes/com/gf/musics/web/mapper/MusicLibraryMapper.xml" afterPath="$PROJECT_DIR$/dao/target/classes/com/gf/musics/web/mapper/MusicLibraryMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/target/classes/com/gf/musics/web/mapper/UserLikeMusicMapper.xml" afterPath="$PROJECT_DIR$/dao/target/classes/com/gf/musics/web/mapper/UserLikeMusicMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/target/classes/mybatis/generatorConfig.xml" afterPath="$PROJECT_DIR$/dao/target/classes/mybatis/generatorConfig.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/util/src/main/java/com/gf/musics/web/util/DateUtils.java" afterPath="$PROJECT_DIR$/util/src/main/java/com/gf/musics/web/util/DateUtils.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/mapper/SingerStyleMapper.xml" afterPath="$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/mapper/SongListMusicMapper.xml" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/util/target/" />
@@ -26,22 +104,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="MusicLibraryController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/controller/MusicLibraryController.java">
+      <file leaf-file-name="SongListController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/controller/SongListController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="840">
-              <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+            <state relative-caret-position="165">
+              <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MusiclibraryServiceImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/admin/src/main/java/com/gf/musics/web/service/impl/MusiclibraryServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="930">
+              <caret line="43" column="22" lean-forward="false" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RequestCovert.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/Covert/RequestCovert.java">
+      <file leaf-file-name="SongListMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/mapper/SongListMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="4530">
+              <caret line="151" column="45" lean-forward="false" selection-start-line="151" selection-start-column="45" selection-end-line="151" selection-end-column="45" />
+              <folding>
+                <marker date="1517391728354" expanded="true" signature="1049:1161" ph="select from t_song_list" />
+                <marker date="1517391728354" expanded="true" signature="1247:1313" ph="delete from " />
+                <marker date="1517391728354" expanded="true" signature="1402:1775" ph="insert into t_song_list... " />
+                <marker date="1517391728354" expanded="true" signature="3240:3947" ph="update t_son... " />
+                <marker date="1517391728354" expanded="true" signature="4048:4428" ph="update t_son... " />
+                <marker date="1517391728354" expanded="true" signature="4534:4602" ph="select from t_song_list" />
+                <marker date="1517391728354" expanded="true" signature="4534:4905" ph="select from t_song_list" />
+                <marker date="1517391728354" expanded="true" signature="4534:4947" ph="select from t_song_list" />
+                <marker date="1517391728354" expanded="true" signature="5059:5074" ph="select COUNT... " />
+                <marker date="1517391728354" expanded="true" signature="5059:5436" ph="select COUNT... t_song_list" />
+                <marker date="1517391728354" expanded="true" signature="5548:5824" ph="select from t_song_list" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -59,40 +161,43 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>course option:selected</find>
-      <find>select</find>
-      <find>course</find>
-      <find>iconValue</find>
-      <find>musicAdd.html</find>
-      <find>musicStyle</find>
-      <find>videoAddress</find>
-      <find>getName</find>
-      <find>void</find>
-      <find>selectfiles</find>
-      <find>video-add.json</find>
-      <find>dao</find>
-      <find>insertSelective</find>
-      <find>insert</find>
-      <find>musicStyle-list.action</find>
-      <find>updateByPrimaryKey</find>
-      <find>musicId</find>
-      <find>deleteByPrimaryKey</find>
       <find>updateByPrimaryKeySelective</find>
-      <find>Base_Column_List</find>
       <find>BaseResultMap</find>
       <find>selectMyLikeMusic</find>
       <find>getBlurryMusicLibraryList</find>
       <find>selectMusiclibraryByNewApi</find>
       <find>selectRecommendMusiclibraryByApi</find>
       <find>selectByPageApi</find>
-      <find>selectByCount</find>
-      <find>selectByAccount</find>
       <find>selectByQq</find>
+      <find>USER</find>
+      <find>SqlSessionFactoryBean</find>
+      <find>Base_Column_List</find>
+      <find>selectByPrimaryKey</find>
+      <find>selectByMySinger</find>
+      <find>mySingerMapper</find>
+      <find>selectByCount</find>
+      <find>selectByUserIdAndSongListId</find>
+      <find>selectByMyAlbum</find>
+      <find>selectBySingerId</find>
+      <find>selectSingerAlbumByCount</find>
+      <find>musiclibrary-list.action</find>
+      <find>musiclibraryByNew-list.action</find>
+      <find>selectByMyMv</find>
+      <find>selectByAlbumCount</find>
+      <find>getRecommendMusic.action</find>
+      <find>selectByAccount</find>
+      <find>usersongListMusic.action</find>
+      <find>userLikeMusic.action</find>
       <find>selectByPage</find>
+      <find>emotion_id</find>
+      <find>selectByUpdateTime</find>
     </findStrings>
     <replaceStrings>
       <replace />
     </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -102,57 +207,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/service/impl/MusicLibraryServiceImpl.java" />
-        <option value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/views/manage/musiclibrary/musiclibrart-list.jsp" />
-        <option value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/views/manage/role/role-list.jsp" />
-        <option value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/views/manage/musiclibrary/musiclibrary-list.jsp" />
-        <option value="$PROJECT_DIR$/admin/src/main/java/com/gf/musics/web/controller/uploadController.java" />
-        <option value="$PROJECT_DIR$/admin/src/main/java/com/gf/musics/web/service/MusicStyleService.java" />
-        <option value="$PROJECT_DIR$/admin/src/main/java/com/gf/musics/web/controller/MusiclibraryController.java" />
-        <option value="$PROJECT_DIR$/admin/src/main/java/com/gf/musics/web/service/impl/MusicStyleServiceImpl.java" />
-        <option value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/views/manage/musiclibrary/musiclibrary-add.jsp" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/util/pom.xml" />
-        <option value="$PROJECT_DIR$/dao/pom.xml" />
-        <option value="$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/service/impl/MusicStyleServiceImpl.java" />
-        <option value="$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/service/RecommendService.java" />
-        <option value="$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/dao/AlbumMapper.java" />
-        <option value="$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/dao/UserMapper.java" />
-        <option value="$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/mapper/AlbumMapper.xml" />
-        <option value="$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/service/impl/RecommendServiceImpl.java" />
-        <option value="$PROJECT_DIR$/admin/src/main/resources/spring/spring-mybatis.xml" />
-        <option value="$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/controller/RecommendController.java" />
-        <option value="$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/mapper/UserMapper.xml" />
-        <option value="$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/model/User.java" />
-        <option value="$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/service/UserService.java" />
-        <option value="$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/service/impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/admin/src/main/resources/configs/jdbc.properties" />
-        <option value="$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/dao/UserLikeMusicMapper.java" />
-        <option value="$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/service/UserSongListMusicService.java" />
-        <option value="$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/dao/UserSongListMusicMapper.java" />
-        <option value="$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/service/impl/UserSongListMusicServiceImpl.java" />
-        <option value="$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/mapper/UserSongListMusicMapper.xml" />
-        <option value="$PROJECT_DIR$/dao/src/main/resources/mybatis/generatorConfig.xml" />
-        <option value="$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/constant/APIConstant.java" />
-        <option value="$MAVEN_REPOSITORY$/org/springframework/spring-aop/3.2.3.RELEASE/spring-aop-3.2.3.RELEASE.jar!/org/springframework/aop/support/AopUtils.class" />
-        <option value="$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/dao/SongListMusicMapper.java" />
-        <option value="$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/controller/UserController.java" />
-        <option value="$MAVEN_REPOSITORY$/org/springframework/spring-tx/3.2.3.RELEASE/spring-tx-3.2.3.RELEASE.jar!/org/springframework/transaction/interceptor/TransactionAspectSupport.class" />
-        <option value="$MAVEN_REPOSITORY$/org/springframework/spring-aop/3.2.3.RELEASE/spring-aop-3.2.3.RELEASE.jar!/org/springframework/aop/interceptor/ExposeInvocationInterceptor.class" />
-        <option value="$MAVEN_REPOSITORY$/org/springframework/spring-aop/3.2.3.RELEASE/spring-aop-3.2.3.RELEASE.jar!/org/springframework/aop/framework/JdkDynamicAopProxy.class" />
-        <option value="$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/mapper/MusicLibraryMapper.xml" />
-        <option value="$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/dao/UserSongListMapper.java" />
-        <option value="$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/mapper/MusicStyleMapper.xml" />
-        <option value="$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/controller/MusicStyleController.java" />
         <option value="$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/model/UserSongListMusic.java" />
-        <option value="$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/mapper/UserSongListMapper.xml" />
         <option value="$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/mapper/ManagerMapper.xml" />
         <option value="$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/dao/MusicLabelMapper.java" />
-        <option value="$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/dao/MusicLibraryMapper.java" />
         <option value="$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/mapper/RoleMapper.xml" />
+        <option value="$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/controller/MusicLibraryController.java" />
+        <option value="$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.2.1/mybatis-3.2.1.jar!/org/apache/ibatis/binding/MapperMethod.class" />
+        <option value="$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/dao/SongListMusicMapper.java" />
         <option value="$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/mapper/SongListMusicMapper.xml" />
+        <option value="$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/service/UserSongListService.java" />
+        <option value="$MAVEN_REPOSITORY$/org/springframework/spring-aop/3.2.3.RELEASE/spring-aop-3.2.3.RELEASE.jar!/org/springframework/aop/interceptor/ExposeInvocationInterceptor.class" />
+        <option value="$MAVEN_REPOSITORY$/org/springframework/spring-aop/3.2.3.RELEASE/spring-aop-3.2.3.RELEASE.jar!/org/springframework/aop/framework/JdkDynamicAopProxy.class" />
+        <option value="$MAVEN_REPOSITORY$/org/springframework/spring-web/3.2.3.RELEASE/spring-web-3.2.3.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class" />
+        <option value="$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/model/SongListMusic.java" />
+        <option value="$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/dao/MySingerMapper.java" />
+        <option value="$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/mapper/MySingerMapper.xml" />
+        <option value="$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/controller/TestController.java" />
+        <option value="$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/dao/UserSongListMapper.java" />
+        <option value="$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/dao/MyAlbumMapper.java" />
+        <option value="$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/mapper/MyAlbumMapper.xml" />
+        <option value="$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/mapper/AlbumMapper.xml" />
+        <option value="$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/dao/AlbumMapper.java" />
+        <option value="$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/service/UserService.java" />
+        <option value="$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/dao/MyMvMapper.java" />
+        <option value="$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/mapper/MyMvMapper.xml" />
+        <option value="$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/mapper/MusicLibraryMapper.xml" />
+        <option value="$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/dao/MusicLibraryMapper.java" />
+        <option value="$PROJECT_DIR$/util/src/main/java/com/gf/musics/web/util/DateUtils.java" />
+        <option value="$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/service/impl/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/mapper/UserLikeMusicMapper.xml" />
         <option value="$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/service/impl/UserSongListServiceImpl.java" />
+        <option value="$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/mapper/UserSongListMapper.xml" />
+        <option value="$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/mapper/ReecommendedSongListMapper.xml" />
+        <option value="$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/dao/RecommendedSongListMapper.java" />
+        <option value="$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/mapper/RecommendedSongListMapper.xml" />
+        <option value="$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/controller/RecommendedSongListController.java" />
+        <option value="$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/controller/SingerCountryController.java" />
+        <option value="$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/controller/MusicStyleController.java" />
+        <option value="$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/service/SongListService.java" />
+        <option value="$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/service/impl/RecommendServiceImpl.java" />
+        <option value="$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/service/RecommendService.java" />
+        <option value="$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/controller/SongListController.java" />
+        <option value="$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/service/impl/MusicLibraryServiceImpl.java" />
+        <option value="$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/dao/EmotionMapper.java" />
+        <option value="$PROJECT_DIR$/dao/src/main/resources/mybatis/generatorConfig.xml" />
+        <option value="$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/dao/SongListMapper.java" />
+        <option value="$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/constant/APIConstant.java" />
+        <option value="$MAVEN_REPOSITORY$/org/springframework/spring-aop/3.2.3.RELEASE/spring-aop-3.2.3.RELEASE.jar!/org/springframework/aop/support/AopUtils.class" />
+        <option value="$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/mapper/SongListMapper.xml" />
+        <option value="$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/service/impl/SongListServiceImpl.java" />
+        <option value="$PROJECT_DIR$/admin/src/main/java/com/gf/musics/web/service/impl/MusiclibraryServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -203,12 +308,12 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="362" />
-    <option name="y" value="10" />
-    <option name="width" value="1359" />
-    <option name="height" value="1038" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-25" />
+    <option name="width" value="1607" />
+    <option name="height" value="1045" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -224,13 +329,72 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="Musics" type="b2602c69:ProjectViewProjectNode" />
               <item name="Musics" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Musics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Musics" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Musics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Musics" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Musics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Musics" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Musics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Musics" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Musics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Musics" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Musics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Musics" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Musics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Musics" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Musics" type="b2602c69:ProjectViewProjectNode" />
@@ -380,20 +544,56 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="mybatis" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Musics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Musics" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Musics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Musics" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Musics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Musics" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Musics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Musics" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Musics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Musics" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Musics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.17421874" />
     <property name="project.structure.side.proportion" value="0.5009862" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -403,6 +603,10 @@
     <property name="Repository.Attach.Sources" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\demo\demo\Musics\Musics\dao\src\main\java\com\gf\musics\web\mapper" />
+      <recent name="F:\demo\demo\Musics\Musics\dao\src\main\java\com\gf\musics\web\dao" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.gf.musics.web.Covert" />
       <recent name="com.gf.musics.web.service.impl" />
@@ -705,15 +909,24 @@
       <workItem from="1516702854621" duration="624000" />
       <workItem from="1516758146942" duration="6478000" />
       <workItem from="1516765731062" duration="9664000" />
-      <workItem from="1516780601888" duration="3954000" />
+      <workItem from="1516780601888" duration="5654000" />
+      <workItem from="1516844722480" duration="487000" />
+      <workItem from="1516845752853" duration="10315000" />
+      <workItem from="1516930461866" duration="1263000" />
+      <workItem from="1517204114590" duration="10246000" />
+      <workItem from="1517276331845" duration="13956000" />
+      <workItem from="1517292176381" duration="15557000" />
+      <workItem from="1517362463144" duration="1968000" />
+      <workItem from="1517364907720" duration="23290000" />
+      <workItem from="1517448525593" duration="2304000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="271139000" />
+    <option name="totallyTimeSpent" value="352225000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -726,18 +939,18 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2495286" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40384614" sideWeight="0.49785408" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31447965" sideWeight="0.49785408" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4649321" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4638009" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918552" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3540724" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35340908" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29072398" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2387339" sideWeight="0.49315068" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26824033" sideWeight="0.49315068" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2553648" sideWeight="0.5068493" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -746,7 +959,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918552" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3272311" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -754,30 +967,30 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5339367" sideWeight="0.50214595" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32951945" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299356" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918552" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20600858" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2495286" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33936653" sideWeight="0.49785408" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33031675" sideWeight="0.49785408" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32466063" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4638009" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918552" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918552" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29072398" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35340908" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22532189" sideWeight="0.49315068" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2553648" sideWeight="0.5068493" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3272311" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
@@ -785,116 +998,465 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ceshi" />
+    <option name="LAST_COMMIT_MESSAGE" value="ceshi" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/service/impl/UserSongListServiceImpl.java</url>
-          <line>29</line>
+          <line>24</line>
           <properties />
-          <option name="timeStamp" value="108" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/service/impl/MusicStyleServiceImpl.java</url>
-          <line>25</line>
-          <properties />
-          <option name="timeStamp" value="115" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/controller/MusicStyleController.java</url>
-          <line>43</line>
-          <properties />
-          <option name="timeStamp" value="116" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/controller/MusicStyleController.java</url>
-          <line>41</line>
-          <properties />
-          <option name="timeStamp" value="118" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/Covert/RequestCovert.java</url>
-          <line>23</line>
-          <properties />
-          <option name="timeStamp" value="122" />
+          <option name="timeStamp" value="143" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="123" />
+      <option name="time" value="150" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/dao/MyAlbumMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="22" column="33" lean-forward="false" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/model/MyAlbum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="25" column="19" lean-forward="false" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+          <folding>
+            <element signature="e#424#425#0" expanded="false" />
+            <element signature="e#454#455#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/dao/ManagerMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="7" column="35" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/mapper/AlbumMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="547">
+          <caret line="119" column="52" lean-forward="false" selection-start-line="119" selection-start-column="44" selection-end-line="119" selection-end-column="52" />
+          <folding>
+            <marker date="1517301771189" expanded="true" signature="1023:1130" ph="select from t_album" />
+            <marker date="1517301771189" expanded="true" signature="1216:1277" ph="delete from " />
+            <marker date="1517301771189" expanded="true" signature="1363:1719" ph="insert into t_album... " />
+            <marker date="1517301771189" expanded="true" signature="3149:3833" ph="update t_alb... " />
+            <marker date="1517301771189" expanded="true" signature="3931:4294" ph="update t_alb... " />
+            <marker date="1517301771189" expanded="true" signature="4416:4448" ph="SELECT COUNT... t_album" />
+            <marker date="1517301771189" expanded="true" signature="4416:4452" ph="SELECT FROM t_album" />
+            <marker date="1517301771189" expanded="true" signature="4416:4502" ph="SELECT COUNT... t_album" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/dao/AlbumMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="6" column="30" lean-forward="true" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/model/Album.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding>
+            <element signature="e#319#320#0" expanded="false" />
+            <element signature="e#346#347#0" expanded="false" />
+            <element signature="e#387#388#0" expanded="false" />
+            <element signature="e#419#420#0" expanded="false" />
+            <element signature="e#454#455#0" expanded="false" />
+            <element signature="e#485#486#0" expanded="false" />
+            <element signature="e#533#534#0" expanded="false" />
+            <element signature="e#606#607#0" expanded="false" />
+            <marker date="1517301590388" expanded="false" signature="641:652" ph=" { " />
+            <marker date="1517301590388" expanded="false" signature="669:675" ph=" }" />
+            <marker date="1517301590388" expanded="false" signature="723:734" ph=" { " />
+            <marker date="1517301590388" expanded="false" signature="795:801" ph=" }" />
+            <marker date="1517301590388" expanded="false" signature="834:845" ph=" { " />
+            <marker date="1517301590388" expanded="false" signature="861:867" ph=" }" />
+            <marker date="1517301590388" expanded="false" signature="913:924" ph=" { " />
+            <marker date="1517301590388" expanded="false" signature="982:988" ph=" }" />
+            <marker date="1517301590388" expanded="false" signature="1024:1035" ph=" { " />
+            <marker date="1517301590388" expanded="false" signature="1053:1059" ph=" }" />
+            <marker date="1517301590388" expanded="false" signature="1110:1121" ph=" { " />
+            <marker date="1517301590388" expanded="false" signature="1150:1156" ph=" }" />
+            <marker date="1517301590388" expanded="false" signature="1189:1200" ph=" { " />
+            <marker date="1517301590388" expanded="false" signature="1218:1224" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/src/main/java/com/gf/musics/web/util/DateTableUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4830">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/dao/MyMvMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="8" column="29" lean-forward="false" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/mapper/MyMvMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4530">
+          <caret line="151" column="11" lean-forward="false" selection-start-line="151" selection-start-column="11" selection-end-line="151" selection-end-column="11" />
+          <folding>
+            <marker date="1517304968133" expanded="true" signature="1242:1350" ph="select from t_my_mv" />
+            <marker date="1517304968133" expanded="true" signature="1436:1498" ph="delete from " />
+            <marker date="1517304968133" expanded="true" signature="1583:2052" ph="insert into t_my_mv... " />
+            <marker date="1517304968133" expanded="true" signature="3885:4824" ph="update t_my_... " />
+            <marker date="1517304968133" expanded="true" signature="4921:5404" ph="update t_my_... " />
+            <marker date="1517304968133" expanded="true" signature="5510:5624" ph="select from t_my_mv" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/service/MusicLibraryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="10" column="8" lean-forward="false" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/dao/MusicLibraryMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="577">
+          <caret line="28" column="41" lean-forward="false" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/mapper/MusicLibraryMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="355" column="45" lean-forward="false" selection-start-line="355" selection-start-column="40" selection-end-line="355" selection-end-column="45" />
+          <folding>
+            <marker date="1517365112917" expanded="true" signature="2076:2191" ph="select from t_musiclibrary" />
+            <marker date="1517365112917" expanded="true" signature="2277:2346" ph="delete from " />
+            <marker date="1517365112917" expanded="true" signature="2439:3364" ph="insert into t_musiclibrary... " />
+            <marker date="1517365112917" expanded="true" signature="6657:8534" ph="update t_mus... " />
+            <marker date="1517365112917" expanded="true" signature="8639:9599" ph="update t_mus... " />
+            <marker date="1517365112917" expanded="true" signature="11488:12003" ph="SELECT from t_musiclibrary" />
+            <marker date="1517365112917" expanded="true" signature="12129:12566" ph="SELECT from t_musiclibrary" />
+            <marker date="1517365112917" expanded="true" signature="12677:13071" ph="SELECT from t_musiclibrary" />
+            <marker date="1517365112917" expanded="true" signature="13187:13273" ph="SELECT COUNT... t_musiclibrary" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/model/MusicLabel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/model/MusicLibrary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2682">
+          <caret line="167" column="16" lean-forward="false" selection-start-line="167" selection-start-column="16" selection-end-line="167" selection-end-column="16" />
+          <folding>
+            <element signature="e#3423#3424#0" expanded="false" />
+            <element signature="e#3469#3470#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/src/main/java/com/gf/musics/web/util/DateUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="129" column="25" lean-forward="false" selection-start-line="129" selection-start-column="25" selection-end-line="129" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/mapper/UserLikeMusicMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="98" column="41" lean-forward="false" selection-start-line="98" selection-start-column="41" selection-end-line="98" selection-end-column="41" />
+          <folding>
+            <marker date="1517367146767" expanded="true" signature="853:971" ph="select from t_user_like_music" />
+            <marker date="1517367146767" expanded="true" signature="1057:1129" ph="delete from " />
+            <marker date="1517367146767" expanded="true" signature="1223:1480" ph="insert into t_user_like_music... " />
+            <marker date="1517367146767" expanded="true" signature="2609:3090" ph="update t_use... " />
+            <marker date="1517367146767" expanded="true" signature="3196:3460" ph="update t_use... " />
+            <marker date="1517367146767" expanded="true" signature="3569:3853" ph="select from t_user_like_music" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/dao/UserLikeMusicMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="22" column="38" lean-forward="false" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="11" column="8" lean-forward="false" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/service/impl/UserSongListServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="507">
+          <caret line="38" column="30" lean-forward="true" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/mapper/ReecommendedSongListMapper.xml" />
+    <entry file="file://$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/service/UserSongListService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="5" column="8" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/dao/UserSongListMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="20" column="34" lean-forward="false" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/mapper/UserSongListMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="139" column="11" lean-forward="true" selection-start-line="139" selection-start-column="11" selection-end-line="139" selection-end-column="11" />
+          <folding>
+            <marker date="1517367639107" expanded="true" signature="1145:1261" ph="select from t_user_songlist" />
+            <marker date="1517367639107" expanded="true" signature="1347:1417" ph="delete from " />
+            <marker date="1517367639107" expanded="true" signature="1510:1927" ph="insert into t_user_songlist... " />
+            <marker date="1517367639107" expanded="true" signature="3552:4358" ph="update t_use... " />
+            <marker date="1517367639107" expanded="true" signature="4463:4894" ph="update t_use... " />
+            <marker date="1517367639107" expanded="true" signature="5000:5274" ph="SELECT FROM t_user_songlist" />
+            <marker date="1517367639107" expanded="true" signature="5000:5278" ph="SELECT FROM t_user_songlist" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/dao/RecommendedSongListMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="16" column="1" lean-forward="false" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/model/RecommendedSongList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/mapper/RecommendedSongListMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3120">
+          <caret line="104" column="11" lean-forward="false" selection-start-line="104" selection-start-column="11" selection-end-line="104" selection-end-column="11" />
+          <folding>
+            <marker date="1517379369289" expanded="true" signature="971:1095" ph="select from t_recommended_song_list" />
+            <marker date="1517379369289" expanded="true" signature="1181:1259" ph="delete from " />
+            <marker date="1517379369289" expanded="true" signature="1359:1692" ph="insert into t_recommended_song_list... " />
+            <marker date="1517379369289" expanded="true" signature="3017:3622" ph="update t_rec... " />
+            <marker date="1517379369289" expanded="true" signature="3734:4067" ph="update t_rec... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/controller/MusicLibraryController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="769">
+          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/controller/MusicStyleController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="43" column="55" lean-forward="true" selection-start-line="43" selection-start-column="55" selection-end-line="43" selection-end-column="55" />
+        <state relative-caret-position="210">
+          <caret line="22" column="85" lean-forward="false" selection-start-line="22" selection-start-column="85" selection-end-line="22" selection-end-column="85" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/model/UserSongListMusic.java">
+    <entry file="file://$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        <state relative-caret-position="3570">
+          <caret line="136" column="55" lean-forward="false" selection-start-line="136" selection-start-column="55" selection-end-line="136" selection-end-column="55" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/model/UserLikeMusic.java">
+    <entry file="file://$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/controller/SingerCountryController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        <state relative-caret-position="630">
+          <caret line="54" column="5" lean-forward="true" selection-start-line="40" selection-start-column="8" selection-end-line="54" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/model/SongListMusic.java">
+    <entry file="file://$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/controller/RecommendedSongListController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
+        <state relative-caret-position="337">
+          <caret line="24" column="46" lean-forward="false" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/service/impl/MusicLibraryServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/service/RecommendService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/service/impl/MusicStyleServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        <state relative-caret-position="150">
+          <caret line="5" column="35" lean-forward="false" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/service/impl/RecommendServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        <state relative-caret-position="-42">
+          <caret line="20" column="7" lean-forward="false" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/service/impl/SingerCountryServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/controller/RecommendController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        <state relative-caret-position="-330">
+          <caret line="22" column="32" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/service/impl/TestServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/mapper/SingerStyleMapper.xml" />
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/dao/SingerStyleMapper.java" />
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/mapper/EmotionMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1517381113774" expanded="true" signature="859:969" ph="select from t_emotion" />
+            <marker date="1517381113774" expanded="true" signature="1056:1120" ph="delete from " />
+            <marker date="1517381113774" expanded="true" signature="1209:1467" ph="insert into t_emotion... " />
+            <marker date="1517381113774" expanded="true" signature="2607:3098" ph="update t_emo... " />
+            <marker date="1517381113774" expanded="true" signature="3199:3464" ph="update t_emo... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/service/impl/MusicLibraryServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="118" column="0" lean-forward="true" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/resources/mybatis/generatorConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="44" column="57" lean-forward="false" selection-start-line="44" selection-start-column="57" selection-end-line="44" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/dao/EmotionMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/constant/APIConstant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="120" column="44" lean-forward="false" selection-start-line="120" selection-start-column="44" selection-end-line="120" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/constant/ResponseConstant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="52" column="56" lean-forward="false" selection-start-line="52" selection-start-column="53" selection-end-line="52" selection-end-column="56" />
           <folding />
         </state>
       </provider>
@@ -902,441 +1464,95 @@
     <entry file="file://$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/service/impl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <caret line="80" column="65" lean-forward="false" selection-start-line="80" selection-start-column="8" selection-end-line="80" selection-end-column="65" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/mapper/VersionMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3962">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1513759301474" expanded="true" signature="1236:1346" ph="select from t_version" />
-            <marker date="1513759301474" expanded="true" signature="1432:1496" ph="delete from " />
-            <marker date="1513759301474" expanded="true" signature="1585:2060" ph="insert into t_version... " />
-            <marker date="1513759301474" expanded="true" signature="3863:4784" ph="update t_ver... " />
-            <marker date="1513759301474" expanded="true" signature="4885:5367" ph="update t_ver... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/mapper/SingerMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4184">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1514253031407" expanded="true" signature="1228:1384" ph="select , fro... " />
-            <marker date="1514253031407" expanded="true" signature="1471:1534" ph="delete from " />
-            <marker date="1514253031407" expanded="true" signature="1622:2001" ph="insert into t_singer... " />
-            <marker date="1514253031407" expanded="true" signature="3496:4221" ph="update t_sin... " />
-            <marker date="1514253031407" expanded="true" signature="4330:4716" ph="update t_sin... " />
-            <marker date="1514253031407" expanded="true" signature="4816:5145" ph="update t_sin... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/mapper/SingerStyleMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2474">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1513759301464" expanded="true" signature="875:990" ph="select from t_singer_style" />
-            <marker date="1513759301464" expanded="true" signature="1077:1146" ph="delete from " />
-            <marker date="1513759301464" expanded="true" signature="1239:1507" ph="insert into t_singer_style... " />
-            <marker date="1513759301464" expanded="true" signature="2669:3172" ph="update t_sin... " />
-            <marker date="1513759301464" expanded="true" signature="3277:3552" ph="update t_sin... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/service/UserSongListService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/resources/mybatis/mybatis-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/resources/mybatis/generatorConfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1140">
-          <caret line="56" column="41" lean-forward="false" selection-start-line="56" selection-start-column="26" selection-end-line="56" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/dao/AlbumMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-37">
-          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/src/main/java/com/gf/musics/web/service/impl/ManagerServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="191" column="50" lean-forward="false" selection-start-line="191" selection-start-column="50" selection-end-line="191" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/dao/ManagerMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="25" column="21" lean-forward="false" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/dao/MusicLabelMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="21" column="46" lean-forward="false" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/dao/MusicLibraryMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="23" column="21" lean-forward="false" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/dao/MusicStyleMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="22" column="35" lean-forward="false" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/dao/PermissionAssignmentMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="21" column="43" lean-forward="false" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/mapper/PermissionAssignmentMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="116" column="26" lean-forward="false" selection-start-line="116" selection-start-column="14" selection-end-line="116" selection-end-column="26" />
-          <folding>
-            <marker date="1513761580828" expanded="true" signature="1061:1185" ph="select from t_permission_assignment" />
-            <marker date="1513761580828" expanded="true" signature="1272:1350" ph="delete from " />
-            <marker date="1513761580828" expanded="true" signature="1452:1825" ph="insert into t_permission_assignment... " />
-            <marker date="1513761580828" expanded="true" signature="3320:4028" ph="update t_per... " />
-            <marker date="1513761580828" expanded="true" signature="4142:4522" ph="update t_per... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/dao/ResourceMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="21" column="31" lean-forward="false" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/mapper/ResourceMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="140" column="26" lean-forward="false" selection-start-line="140" selection-start-column="14" selection-end-line="140" selection-end-column="26" />
-          <folding>
-            <marker date="1513761580878" expanded="true" signature="1168:1279" ph="select from t_resource" />
-            <marker date="1513761580878" expanded="true" signature="1366:1431" ph="delete from " />
-            <marker date="1513761580878" expanded="true" signature="1521:1953" ph="insert into t_resource... " />
-            <marker date="1513761580878" expanded="true" signature="3671:4527" ph="update t_res... " />
-            <marker date="1513761580878" expanded="true" signature="4629:5068" ph="update t_res... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/dao/RoleMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="21" column="27" lean-forward="false" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/mapper/RoleMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="119" column="11" lean-forward="false" selection-start-line="119" selection-start-column="11" selection-end-line="119" selection-end-column="11" />
-          <folding>
-            <marker date="1516783155447" expanded="true" signature="931:1038" ph="select from t_role" />
-            <marker date="1516783155447" expanded="true" signature="1125:1186" ph="delete from " />
-            <marker date="1516783155447" expanded="true" signature="1272:1578" ph="insert into t_role... " />
-            <marker date="1516783155447" expanded="true" signature="2854:3434" ph="update t_rol... " />
-            <marker date="1516783155447" expanded="true" signature="3532:3838" ph="update t_rol... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/dao/SingerCountryMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="22" column="39" lean-forward="false" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/mapper/SingerCountryMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="99" column="29" lean-forward="false" selection-start-line="99" selection-start-column="14" selection-end-line="99" selection-end-column="29" />
-          <folding>
-            <marker date="1515653094713" expanded="true" signature="1167:1284" ph="select from t_singer_country" />
-            <marker date="1515653094713" expanded="true" signature="1371:1442" ph="delete from " />
-            <marker date="1515653094713" expanded="true" signature="1537:1811" ph="insert into t_singer_country... " />
-            <marker date="1515653094713" expanded="true" signature="2987:3498" ph="update t_sin... " />
-            <marker date="1515653094713" expanded="true" signature="3605:3886" ph="update t_sin... " />
-            <marker date="1515653094713" expanded="true" signature="3999:4131" ph="SELECT from t_singer_country" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/dao/SingerStyleMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-67">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/dao/SongListMusicMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="20" column="21" lean-forward="false" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/mapper/UserLikeMusicMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="92" column="63" lean-forward="false" selection-start-line="92" selection-start-column="63" selection-end-line="92" selection-end-column="63" />
-          <folding>
-            <marker date="1516783155533" expanded="true" signature="853:971" ph="select from t_user_like_music" />
-            <marker date="1516783155533" expanded="true" signature="1057:1129" ph="delete from " />
-            <marker date="1516783155533" expanded="true" signature="1223:1480" ph="insert into t_user_like_music... " />
-            <marker date="1516783155533" expanded="true" signature="2609:3090" ph="update t_use... " />
-            <marker date="1516783155533" expanded="true" signature="3196:3460" ph="update t_use... " />
-            <marker date="1516783155533" expanded="true" signature="3569:3644" ph="select from t_user_like_music" />
-            <marker date="1516783155533" expanded="true" signature="3569:3856" ph="select music... t_user_like_music" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/dao/UserLikeMusicMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="22" column="38" lean-forward="false" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/mapper/UserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="168" column="24" lean-forward="false" selection-start-line="168" selection-start-column="14" selection-end-line="168" selection-end-column="24" />
-          <folding>
-            <marker date="1516344136220" expanded="true" signature="1375:1482" ph="select from t_user" />
-            <marker date="1516344136220" expanded="true" signature="1568:1629" ph="delete from " />
-            <marker date="1516344136220" expanded="true" signature="1714:2252" ph="insert into t_user... " />
-            <marker date="1516344136220" expanded="true" signature="4305:5392" ph="update t_use... " />
-            <marker date="1516344136220" expanded="true" signature="5489:6053" ph="update t_use... " />
-            <marker date="1516344136220" expanded="true" signature="6161:6288" ph="select pk_id... t_user" />
-            <marker date="1516344136220" expanded="true" signature="6391:6508" ph="select pk_id... t_user" />
-            <marker date="1516344136220" expanded="true" signature="6615:6736" ph="select pk_id... t_user" />
-            <marker date="1516344136220" expanded="true" signature="6844:6968" ph="select pk_id... t_user" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/dao/UserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="23" column="14" lean-forward="false" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/dao/UserSongListMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="22" column="34" lean-forward="false" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/dao/VersionMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-37">
-          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/3.2.3.RELEASE/spring-aop-3.2.3.RELEASE.jar!/org/springframework/aop/support/AopUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="177" column="0" lean-forward="false" selection-start-line="177" selection-start-column="0" selection-end-line="177" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/mapper/AlbumMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1516243347979" expanded="true" signature="939:1046" ph="select from t_album" />
-            <marker date="1516243347979" expanded="true" signature="1132:1193" ph="delete from " />
-            <marker date="1516243347979" expanded="true" signature="1279:1594" ph="insert into t_album... " />
-            <marker date="1516243347979" expanded="true" signature="2873:3460" ph="update t_alb... " />
-            <marker date="1516243347979" expanded="true" signature="3558:3873" ph="update t_alb... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/mapper/MusicLabelMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1513759301454" expanded="true" signature="971:1085" ph="select from t_music_label" />
-            <marker date="1513759301454" expanded="true" signature="1172:1240" ph="delete from " />
-            <marker date="1513759301454" expanded="true" signature="1332:1663" ph="insert into t_music_label... " />
-            <marker date="1513759301454" expanded="true" signature="2992:3605" ph="update t_mus... " />
-            <marker date="1513759301454" expanded="true" signature="3709:4040" ph="update t_mus... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/mapper/ManagerMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4800">
-          <caret line="160" column="11" lean-forward="false" selection-start-line="160" selection-start-column="11" selection-end-line="160" selection-end-column="11" />
-          <folding>
-            <marker date="1516783155489" expanded="true" signature="1176:1286" ph="select from t_manager" />
-            <marker date="1516783155489" expanded="true" signature="1373:1437" ph="delete from " />
-            <marker date="1516783155489" expanded="true" signature="1526:1964" ph="insert into t_manager... " />
-            <marker date="1516783155489" expanded="true" signature="3694:4560" ph="update t_man... " />
-            <marker date="1516783155489" expanded="true" signature="4661:5106" ph="update t_man... " />
-            <marker date="1516783155489" expanded="true" signature="5214:5327" ph="select FROM t_manager" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/mapper/SongListMusicMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-59">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/model/UserSongList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/mapper/UserSongListMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="3" column="70" lean-forward="true" selection-start-line="3" selection-start-column="70" selection-end-line="3" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="135" column="0" lean-forward="false" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/mapper/MusicLibraryMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="531">
+          <caret line="107" column="25" lean-forward="true" selection-start-line="107" selection-start-column="25" selection-end-line="107" selection-end-column="25" />
           <folding>
-            <marker date="1516779276812" expanded="true" signature="2076:2191" ph="select from t_musiclibrary" />
-            <marker date="1516779276812" expanded="true" signature="2277:2346" ph="delete from " />
-            <marker date="1516779276812" expanded="true" signature="2439:3364" ph="insert into t_musiclibrary... " />
-            <marker date="1516779276812" expanded="true" signature="6657:8534" ph="update t_mus... " />
-            <marker date="1516779276812" expanded="true" signature="8639:9599" ph="update t_mus... " />
-            <marker date="1516779276812" expanded="true" signature="11488:12003" ph="SELECT from t_musiclibrary" />
-            <marker date="1516779276812" expanded="true" signature="12129:12566" ph="SELECT from t_musiclibrary" />
-            <marker date="1516779276812" expanded="true" signature="12174:12557" ph="SELECT from t_musiclibrary" />
-            <marker date="1516779276812" expanded="true" signature="12174:12566" ph="SELECT from t_musiclibrary" />
-            <marker date="1516779276812" expanded="true" signature="12677:13071" ph="SELECT from t_musiclibrary" />
+            <marker date="1516853018686" expanded="true" signature="965:1082" ph="select from t_songlist_music" />
+            <marker date="1516853018686" expanded="true" signature="1169:1240" ph="delete from " />
+            <marker date="1516853018686" expanded="true" signature="1335:1661" ph="insert into t_songlist_music... " />
+            <marker date="1516853018686" expanded="true" signature="2983:3587" ph="update t_son... " />
+            <marker date="1516853018686" expanded="true" signature="3694:4020" ph="update t_son... " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/mapper/MusicStyleMapper.xml">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/3.2.3.RELEASE/spring-aop-3.2.3.RELEASE.jar!/org/springframework/aop/support/AopUtils.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2970">
-          <caret line="99" column="29" lean-forward="false" selection-start-line="99" selection-start-column="14" selection-end-line="99" selection-end-column="29" />
+        <state relative-caret-position="283">
+          <caret line="175" column="0" lean-forward="false" selection-start-line="175" selection-start-column="0" selection-end-line="175" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/mapper/SongListMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4530">
+          <caret line="151" column="45" lean-forward="false" selection-start-line="151" selection-start-column="45" selection-end-line="151" selection-end-column="45" />
           <folding>
-            <marker date="1515654740033" expanded="true" signature="1149:1263" ph="select from t_music_style" />
-            <marker date="1515654740033" expanded="true" signature="1350:1418" ph="delete from " />
-            <marker date="1515654740033" expanded="true" signature="1510:1777" ph="insert into t_music_style... " />
-            <marker date="1515654740033" expanded="true" signature="2936:3438" ph="update t_mus... " />
-            <marker date="1515654740033" expanded="true" signature="3542:3816" ph="update t_mus... " />
-            <marker date="1515654740033" expanded="true" signature="3929:4052" ph="SELECT from t_music_style" />
+            <marker date="1517391728354" expanded="true" signature="1049:1161" ph="select from t_song_list" />
+            <marker date="1517391728354" expanded="true" signature="1247:1313" ph="delete from " />
+            <marker date="1517391728354" expanded="true" signature="1402:1775" ph="insert into t_song_list... " />
+            <marker date="1517391728354" expanded="true" signature="3240:3947" ph="update t_son... " />
+            <marker date="1517391728354" expanded="true" signature="4048:4428" ph="update t_son... " />
+            <marker date="1517391728354" expanded="true" signature="4534:4602" ph="select from t_song_list" />
+            <marker date="1517391728354" expanded="true" signature="4534:4905" ph="select from t_song_list" />
+            <marker date="1517391728354" expanded="true" signature="4534:4947" ph="select from t_song_list" />
+            <marker date="1517391728354" expanded="true" signature="5059:5074" ph="select COUNT... " />
+            <marker date="1517391728354" expanded="true" signature="5059:5436" ph="select COUNT... t_song_list" />
+            <marker date="1517391728354" expanded="true" signature="5548:5824" ph="select from t_song_list" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/service/impl/UserSongListServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/service/impl/SongListServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="2" selection-end-line="5" selection-end-column="50" />
+        <state relative-caret-position="285">
+          <caret line="54" column="26" lean-forward="false" selection-start-line="54" selection-start-column="26" selection-end-line="54" selection-end-column="26" />
           <folding>
-            <element signature="e#698#699#0" expanded="true" />
-            <element signature="e#725#726#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#837#845#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/Covert/RequestCovert.java">
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/gf/musics/web/dao/SongListMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+        <state relative-caret-position="495">
+          <caret line="22" column="17" lean-forward="true" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/service/SongListService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="5" column="8" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/controller/MusicLibraryController.java">
+    <entry file="file://$PROJECT_DIR$/api_user/src/main/java/com/gf/musics/web/controller/SongListController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+        <state relative-caret-position="165">
+          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/main/java/com/gf/musics/web/service/impl/MusiclibraryServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="930">
+          <caret line="43" column="22" lean-forward="false" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
           <folding />
         </state>
       </provider>
@@ -1395,7 +1611,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Musics</last-edited>
+          <last-edited>util</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

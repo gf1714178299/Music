@@ -20,7 +20,7 @@ import java.util.Map;
 @Controller
 @RequestMapping(value = "musicStyle")
 public class MusicStyleController {
-    private final static Logger logger = LoggerFactory.getLogger(MusicLibraryController.class);
+    private final static Logger logger = LoggerFactory.getLogger(MusicStyleController.class);
     @Autowired
     private MusicStyleService musicStyleService;
 

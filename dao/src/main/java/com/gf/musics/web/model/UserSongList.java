@@ -17,7 +17,7 @@ public class UserSongList {
 
     private Date updateTime;
 
-    private Integer count;
+    private Integer statistics;
 
     public Integer getPkId() {
         return pkId;
@@ -75,11 +75,11 @@ public class UserSongList {
         this.updateTime = updateTime;
     }
 
-    public Integer getCount() {
-        return count;
+    public Integer getStatistics() {
+        return statistics;
     }
 
-    public void setCount(Integer count) {
-        this.count = count;
+    public void setStatistics(Integer statistics) {
+        this.statistics = statistics;
     }
 }

@@ -4,4 +4,10 @@ import java.util.Map;
 
 public interface UserSongListService {
     Map getUserSongListMusic(Map map);
+
+    Map UserInsertSongList(Map map);
+
+    Map deleteUserSongList(Map map);
+
+
 }

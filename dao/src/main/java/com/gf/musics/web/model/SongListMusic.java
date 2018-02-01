@@ -28,7 +28,7 @@ public class SongListMusic {
     }
 
     public void setSongListId(String songListId) {
-        this.songListId = songListId == null ? null : songListId.trim();
+        this.songListId = songListId;
     }
 
     public String getMusicId() {
@@ -36,7 +36,7 @@ public class SongListMusic {
     }
 
     public void setMusicId(String musicId) {
-        this.musicId = musicId == null ? null : musicId.trim();
+        this.musicId = musicId;
     }
 
     public Integer getDeleteFlag() {

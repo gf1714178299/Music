@@ -5,6 +5,8 @@ import java.util.Date;
 public class Album {
     private Integer pkid;
 
+    private String albumImg;
+
     private String albumName;
 
     private String singerId;
@@ -21,6 +23,14 @@ public class Album {
 
     public void setPkid(Integer pkid) {
         this.pkid = pkid;
+    }
+
+    public String getAlbumImg() {
+        return albumImg;
+    }
+
+    public void setAlbumImg(String albumImg) {
+        this.albumImg = albumImg == null ? null : albumImg.trim();
     }
 
     public String getAlbumName() {

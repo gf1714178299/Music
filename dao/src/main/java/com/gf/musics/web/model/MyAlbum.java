@@ -2,10 +2,12 @@ package com.gf.musics.web.model;
 
 import java.util.Date;
 
-public class SingerStyle {
+public class MyAlbum {
     private Integer pkId;
 
-    private String styleName;
+    private Integer albumId;
+
+    private Integer userId;
 
     private Integer deleteFlag;
 
@@ -21,12 +23,20 @@ public class SingerStyle {
         this.pkId = pkId;
     }
 
-    public String getStyleName() {
-        return styleName;
+    public Integer getAlbumId() {
+        return albumId;
     }
 
-    public void setStyleName(String styleName) {
-        this.styleName = styleName == null ? null : styleName.trim();
+    public void setAlbumId(Integer albumId) {
+        this.albumId = albumId;
+    }
+
+    public Integer getUserId() {
+        return userId;
+    }
+
+    public void setUserId(Integer userId) {
+        this.userId = userId;
     }
 
     public Integer getDeleteFlag() {

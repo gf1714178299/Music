@@ -27,7 +27,6 @@ public class MusicLibraryController {
     private final static Logger logger = LoggerFactory.getLogger(MusicLibraryController.class);
     @Autowired
     private MusicLibraryService musicLibraryService;
-
     /**
      * 歌曲搜索(以点击量排序)
      * @param response

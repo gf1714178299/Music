@@ -42,7 +42,10 @@
         <!--<table tableName="t_music_style" domainObjectName="MusicStyle" enableCountByExample="false" enableUpdateByExample="false"-->
                <!--enableDeleteByExample="false" enableSelectByExample="false"-->
                <!--selectByExampleQueryId="false" />-->
-        <!--<table tableName="t_musiclibrary" domainObjectName="MusicLibrary" enableCountByExample="false" enableUpdateByExample="false"-->
+        <table tableName="t_song_list" domainObjectName="SongList" enableCountByExample="false" enableUpdateByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false"
+               selectByExampleQueryId="false" />
+        <!--<table tableName="t_emotion" domainObjectName="Emotion" enableCountByExample="false" enableUpdateByExample="false"-->
                <!--enableDeleteByExample="false" enableSelectByExample="false"-->
                <!--selectByExampleQueryId="false" />-->
         <!--<table tableName="t_singer" domainObjectName="Singer" enableCountByExample="false" enableUpdateByExample="false"-->
@@ -54,10 +57,16 @@
         <!--<table tableName="t_singer_style" domainObjectName="SingerStyle" enableCountByExample="false" enableUpdateByExample="false"-->
                <!--enableDeleteByExample="false" enableSelectByExample="false"-->
                <!--selectByExampleQueryId="false" />-->
-        <table tableName="t_user_songlist" domainObjectName="UserSongList" enableCountByExample="false" enableUpdateByExample="false"
-               enableDeleteByExample="false" enableSelectByExample="false"
-               selectByExampleQueryId="false" />
-        <!--<table tableName="t_songlist_music" domainObjectName="SongListMusic" enableCountByExample="false" enableUpdateByExample="false"-->
+        <!--<table tableName="t_user_songlist" domainObjectName="UserSongList" enableCountByExample="false" enableUpdateByExample="false"-->
+               <!--enableDeleteByExample="false" enableSelectByExample="false"-->
+               <!--selectByExampleQueryId="false" />-->
+        <!--<table tableName="t_my_singer" domainObjectName="MySinger" enableCountByExample="false" enableUpdateByExample="false"-->
+               <!--enableDeleteByExample="false" enableSelectByExample="false"-->
+               <!--selectByExampleQueryId="false" />-->
+        <!--<table tableName="t_my_album" domainObjectName="MyAlbum" enableCountByExample="false" enableUpdateByExample="false"-->
+               <!--enableDeleteByExample="false" enableSelectByExample="false"-->
+               <!--selectByExampleQueryId="false" />-->
+        <!--<table tableName="t_my_mv" domainObjectName="MyMv" enableCountByExample="false" enableUpdateByExample="false"-->
                <!--enableDeleteByExample="false" enableSelectByExample="false"-->
                <!--selectByExampleQueryId="false" />-->
         <!--<table tableName="t_manager" domainObjectName="Manager" enableCountByExample="false" enableUpdateByExample="false"-->

@@ -2,13 +2,10 @@ package com.gf.musics.web.service.impl;
 
 import com.gf.musics.web.constant.APIConstant;
 import com.gf.musics.web.constant.ResponseConstant;
-import com.gf.musics.web.dao.MusicLibraryMapper;
-import com.gf.musics.web.dao.UserLikeMusicMapper;
-import com.gf.musics.web.dao.UserMapper;
-import com.gf.musics.web.model.MusicLibrary;
-import com.gf.musics.web.model.User;
-import com.gf.musics.web.model.UserLikeMusic;
+import com.gf.musics.web.dao.*;
+import com.gf.musics.web.model.*;
 import com.gf.musics.web.service.UserService;
+import com.gf.musics.web.util.DateUtils;
 import com.gf.musics.web.util.StringUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -26,6 +23,16 @@ public class UserServiceImpl implements UserService{
     private MusicLibraryMapper musicLibraryMapper;
     @Autowired
     private UserLikeMusicMapper userLikeMusicMapper;
+    @Autowired
+    private MyAlbumMapper myAlbumMapper;
+    @Autowired
+    private MySingerMapper mySingerMapper;
+    @Autowired
+    private MyMvMapper myMvMapper;
+    @Autowired
+    private SingerMapper singerMapper;
+    @Autowired
+    private AlbumMapper albumMapper;
 
     @Override
     public Map getUserData(Map map) {
@@ -80,19 +87,66 @@ public class UserServiceImpl implements UserService{
             remap.put(APIConstant.SINGER_ID, musicLibrary.getSingerId());
             remap.put(APIConstant.SINGER_NAME, musicLibrary.getSingerName());
             remap.put(APIConstant.MUSIC_IMG_URL, musicLibrary.getMusicImgUrl());
-            remap.put(APIConstant.MUSIC_URL, musicLibrary.getMusicUrl());
-            remap.put(APIConstant.MUSIC_MV_URL, musicLibrary.getMusicMvUrl());
-            remap.put(APIConstant.MUSIC_GECI, musicLibrary.getMusicGeci());
             remap.put(APIConstant.MUSIC_DURATION, musicLibrary.getMusicDuration());
             remap.put(APIConstant.MUSIC_SIZE, musicLibrary.getMusicSize());
             remap.put(APIConstant.CLICKS, musicLibrary.getClicks());
             remap.put(APIConstant.ALBUM, musicLibrary.getAlbum());
-            remap.put(APIConstant.STYLE_ID, musicLibrary.getStyleId());
-            remap.put(APIConstant.PUBLISH_DATE, musicLibrary.getPublishDate());
+            remap.put(APIConstant.PUBLISH_DATE, DateUtils.parseYYYY(musicLibrary.getPublishDate()));
             musicLibraryLists.add(remap);
         }
         Map dataMap = new HashMap();
         dataMap.put("musicLibraryLists",musicLibraryLists);
+        return ResponseConstant.getSuccessResult(dataMap);
+    }
+
+    @Override
+    public Map selectMySinger(Map map) {
+        String userIdString = String.valueOf(map.get(APIConstant.USER_ID));
+        Integer userId = Integer.valueOf(userIdString);
+        List<MySinger> mySingers = mySingerMapper.selectByMySinger(userId);
+        List<Object> mySingerList = new ArrayList<Object>();
+        for (MySinger mySinger:mySingers){
+            Map requestMap = new HashMap();
+            requestMap.put("singerId",mySinger.getSingerId());
+            Integer singId = Integer.valueOf(mySinger.getSingerId());
+            Singer singer = singerMapper.selectByPrimaryKey(singId);
+            int albumCount  = albumMapper.selectSingerAlbumByCount(String.valueOf(mySinger.getSingerId()));
+            int musicCount = musicLibraryMapper.selectByCount(requestMap);
+            requestMap.put("singIcon",singer.getSingerImg());
+            requestMap.put("albumCount",albumCount);
+            requestMap.put("musicCount",musicCount);
+            mySingerList.add(requestMap);
+        }
+        Map dataMap = new HashMap();
+        dataMap.put("mySingerList",mySingerList);
+        return ResponseConstant.getSuccessResult(dataMap);
+    }
+
+    @Override
+    public Map selectMyAlbum(Map map) {
+        List<MyAlbum> myAlbums = myAlbumMapper.selectByMyAlbum(map);
+        List<Object> myAlbumList = new ArrayList<Object>();
+        for(MyAlbum myAlbum:myAlbums){
+            Map requestMap = new HashMap();
+            int albumCount = musicLibraryMapper.selectByAlbumCount(String.valueOf(myAlbum.getAlbumId()));
+            Album album = albumMapper.selectByPrimaryKey(myAlbum.getAlbumId());
+            Singer singer = singerMapper.selectByPrimaryKey(Integer.valueOf(album.getSingerId()));
+            requestMap.put("singerName",singer.getSingerName());
+            requestMap.put("albumImg",album.getAlbumImg());
+            requestMap.put("albumName",album.getAlbumName());
+            requestMap.put("musicCount",albumCount);
+            myAlbumList.add(requestMap);
+        }
+        Map dataMap = new HashMap();
+        dataMap.put("myAlbumList",myAlbumList);
+        return ResponseConstant.getSuccessResult(dataMap);
+    }
+
+    @Override
+    public Map selectMyMv(Map map) {
+        List<MyMv> myMvs = myMvMapper.selectByMyMv(map);
+        Map dataMap = new HashMap();
+        dataMap.put("myMvs",myMvs);
         return ResponseConstant.getSuccessResult(dataMap);
     }
 
